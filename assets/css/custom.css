@@ -110,6 +110,10 @@ article.slide:target {
     display: block;
 }
 
+article.slide img, article.slide svg, article.slide audio, article.slide video, article.slide iframe{
+    max-height: unset !important;
+}
+
 .icon:hover {
     filter: opacity(0.5);
 }
@@ -148,7 +152,7 @@ article.slide:target {
     padding-bottom: 0.1em;
     margin-top: 0.7em;
     margin-bottom: 0.7em;
-    font-family: Ubuntu;
+    font-family: Ubuntu,Arial,sans-serif;
 }
 
 .align-vertical {
