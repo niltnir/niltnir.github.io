@@ -110,10 +110,6 @@ article.slide:target {
     display: block;
 }
 
-article.slide img, article.slide svg, article.slide audio, article.slide video, article.slide iframe{
-    max-height: unset !important;
-}
-
 .icon:hover {
     filter: opacity(0.5);
 }
