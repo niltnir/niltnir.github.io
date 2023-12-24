@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/math.xml</id><subtitle>Tag: math</subtitle><updated>2023-12-23T04:48:42Z</updated><link href="nodalynn.com/feeds/tags/math.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Binging Euclidean Geometry</title><id>https://nodalynn.com/binging-euclidean-geometry.html</id><author><name></name></author><updated>2023-12-23T04:46:00Z</updated><link href="https://nodalynn.com/binging-euclidean-geometry.html" rel="alternate" /><summary type="html">&lt;h2&gt;Geometry is Underrated&lt;/h2&gt;&lt;p&gt;This is the story of how cyclic quadrilaterals, radical axes, and homothety
-are gradually taking over my life.&lt;/p&gt;&lt;p&gt;After publishing the initial site, I decided to take a break from code to do
-something else for a while. At first I was considering doing some drawing or
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/math.xml</id><subtitle>Tag: math</subtitle><updated>2023-12-24T01:39:40Z</updated><link href="nodalynn.com/feeds/tags/math.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Binging Euclidean Geometry</title><id>https://nodalynn.com/binging-euclidean-geometry.html</id><author><name></name></author><updated>2023-12-23T04:46:00Z</updated><link href="https://nodalynn.com/binging-euclidean-geometry.html" rel="alternate" /><summary type="html">&lt;h2&gt;Euclidean Geometry is Underrated&lt;/h2&gt;&lt;p&gt;This is the story of how cyclic quadrilaterals, radical axes, and homothety
+have gradually taken over my life.&lt;/p&gt;&lt;p&gt;After publishing the initial site, I decided to take a break from code to do
+something else for a while. At first I was considering drawing sketches or
 solving combinatorics problems, but strangely enough, I found myself picking up
 a geometry book I bought some years ago.&lt;/p&gt;&lt;p&gt;If you've read my math page, you'll know that I enjoy discrete math, so it was
 quite odd for me to suddenly crave for geometry. Perhaps the appeal was the
 pretty diagrams I got to draw with compass and straightedge. I admit, there is
-a certain meditative quality in patiently turning words into pictures.&lt;/p&gt;&lt;p&gt;But this was the tip of the iceberg. As I slowly made way through the book,
-propositions, theorems, and lemmas, flew onto sheets of paper. As I slowly got
-acquainted with these objects, I started solving problems. Soon I was craving
-to get past the theory to fly straight into the wild west of exhilarating
-problems.&lt;/p&gt;&lt;p&gt;One fun problem&lt;code&gt;(sidenote &amp;quot;The solution can be found elsewhere while I slowly commit to digital writeups.&amp;quot;)&lt;/code&gt; I was immediately confronted with was the
-following:&lt;/p&gt;&lt;p&gt;&lt;em&gt;Given a circle and a point inside of it, take all the chords through the point
+a certain meditative quality in patiently turning words into pictures.&lt;/p&gt;&lt;p&gt;As I slowly made way through the book, propositions, theorems, and lemmas flew
+onto sheets of paper. And as I got acquainted with these objects, I started
+solving some exercises. Soon I was craving to get past the theory to dive
+straight into the wild west of exhilarating problems.&lt;/p&gt;&lt;p&gt;One fun problem&lt;code&gt;(sidenote &amp;quot;The solution can be found elsewhere. If motivation permits, I will post the solution on this site.&amp;quot;)&lt;/code&gt; I was immediately confronted
+with was the following:&lt;/p&gt;&lt;p&gt;&lt;em&gt;Given a circle and a point inside of it, take all the chords through the point
 and aggregate their midpoints. Prove that the resulting figure is a circle with
 its diameter defined between the point and the center of the circle.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;The beauty of Euclidean geometry lies in its simple character. There are no
 crazy equations&lt;code&gt;(sidenote &amp;quot;With the exceptions of rectilinear coordinates, complex numbers, barycentric coordinates, linear algebra, etc.&amp;quot;)&lt;/code&gt;, no confusing
-objects, no fancy notation, yet results are often astonishing. No wonder it's
-called the &lt;strong&gt;king&lt;/strong&gt; of mathematics. I guess in this sense, it's closer to the
-elegance of discrete math than it is to something like algebra or analysis.&lt;/p&gt;&lt;p&gt;Unfortunately, geometry gets a bad rap in conventional education and other
+objects, no fancy notation, yet results are often astonishing. It's no wonder
+that geometry is called the &lt;strong&gt;king&lt;/strong&gt; of mathematics. I guess in this sense,
+it's closer to the elegance of discrete math than it is to, say, algebra or
+analysis.&lt;/p&gt;&lt;p&gt;Unfortunately, geometry gets a bad rap in conventional education and other
 academic institutions. It's often written off as &amp;quot;useless&amp;quot; and &amp;quot;trivial&amp;quot; by
 many. In fact, Euclidean geometry is a dead topic among professional
-mathematicians despite its historical origins. In a way though, the topic is a
+mathematicians despite its historical origins. In a way though, the field is a
 hidden gem—detached from the world, only showing itself to those who seek it.&lt;/p&gt;&lt;p&gt;It's often hard as a beginner to recognize the depth to which something simple
 manifests. When I tried getting into geometry years ago, the theory seemed too
 &amp;quot;fundamental&amp;quot; and the problems too &amp;quot;similar&amp;quot;. Only now do I appreciate the true
 depth that this humble subject has to offer. This is especially true after
-solving neat, challenging Olympiad problems.&lt;/p&gt;&lt;p&gt;Of course, now that I have pages filled with diagrams of problems and solutions,
+solving many beautifully crafted Olympiad problems.&lt;/p&gt;&lt;p&gt;Of course, now that I have pages filled with diagrams of problems and solutions,
 it only worsens my ever-increasing queue of &amp;quot;math to convert to LaTeX&amp;quot;.
 Diagrams are also more tedious because it requires additional tools like
 Asymptote.&lt;/p&gt;&lt;p&gt;Nonetheless, geometry has a new place in my heart. Gone are the days of &lt;em&gt;yet
 another find the length problem&lt;/em&gt;. It's a field where more of its magic is
-revealed the deeper you go. But go too far, and you'll start looking for
-concyclic points in stars and raindrops.&lt;code&gt;(sidenote &amp;quot;My record is dreaming up diagrams in my sleep, and apparently this is a phenomenon called the Tetris effect. Besides geometric diagrams and Tetris blocks, I've also dreamt of Lisp code.&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;p&gt;That's pretty much what I've been up to lately. Excuse my bad writing, this is
-being written at 4 AM in the morning. ;p&lt;/p&gt;</summary></entry></feed>
+revealed to you the deeper you go. But go too far, and you'll start looking for
+concyclic points in stars and raindrops.&lt;code&gt;(sidenote &amp;quot;This is the famous Tetris effect. My record is having diagrams appear in my dream. Besides geometry and Tetris, I've also dreamt of Lisp code.&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;p&gt;That's pretty much what I've been up to lately. Excuse my bad writing, this is
+being written at 4 AM in the morning (revised a day later). ;p&lt;/p&gt;</summary></entry></feed>
