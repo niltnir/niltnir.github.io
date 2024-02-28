@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/algebra.xml</id><subtitle>Tag: algebra</subtitle><updated>2024-02-28T03:20:15Z</updated><link href="nodalynn.com/feeds/tags/algebra.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/2</title><id>https://nodalynn.com/usamo-19952.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19952.html" rel="alternate" /><summary type="html">&lt;h2&gt;Broken Calculator with Trig&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A calculator is broken so that the only keys that still work are the \( \sin\), \(
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/algebra.xml</id><subtitle>Tag: algebra</subtitle><updated>2024-02-28T15:03:25Z</updated><link href="nodalynn.com/feeds/tags/algebra.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/2</title><id>https://nodalynn.com/usamo-19952.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19952.html" rel="alternate" /><summary type="html">&lt;h2&gt;Broken Calculator with Trig&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A calculator is broken so that the only keys that still work are the \( \sin\), \(
 \cos\), and \( \tan\) buttons, and their inverses (the \( \arcsin\), \( \arccos\), and
 \( \arctan\) buttons). The display initially shows \( 0\). Given any positive
 rational number \( q\), show that pressing some finite sequence of buttons will
@@ -216,16 +216,17 @@ values of \(n\). At first, the experimentation will make the problem smell like
 number theory, but after a while, we observe a recursive structure in the
 bounds. From here, we guess that the answer is just \(n\), and the usage of
 strong induction is highly motivated. &lt;/p&gt;&lt;p&gt;The only point of caution is to not get \(\textit{for each}\) mixed up with
-\(\textit{for some}\).  This is the infamous point-wise trap. When we say that
-\(f(n) \geq n\), we must specify whether this is true for some particular value
-of \(n\), or for each \(n \in \mathbb{N}\). The distinction seems subtle, but the
-consequences are dire.  For example, if \(f(n) \geq n\) is for true for each \(n\),
-then we can safely conclude that \(f(f(n)) \geq f(n)\), whereas if the argument
-is only true for some \(n\), we cannot make such conclusions.&lt;/p&gt;&lt;p&gt;In fact, there are lines of logic that are even more seemingly subtle than what
-is described above. The famous one is the distinction between \(\textit{for each}
-\) and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)),
-but they can mean completely different things depending on the context. In
-these cases, leaning towards for each is a good bet.
+\(\textit{for some}\). When we say that \(f(n) \geq n\), we must specify whether
+this is true for some particular value of \(n\), or for each \(n \in \mathbb{N}\).
+The consequences of getting this wrong are dire. For example, if \(f(n) \geq n\)
+is for true for each \(n\), then we can safely conclude that \(f(f(n)) \geq f(n)\),
+whereas if the argument is only true for some \(n\), we cannot make such
+conclusions.&lt;/p&gt;&lt;p&gt;In fact, there are lines of logic that are even more subtle than what is
+described above. The famous one is the distinction between \(\textit{for each} \)
+and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)), but
+they can mean completely different things depending on the context. For
+functional equations in particular, an infamous example would be the so-called
+point-wise trap. In these cases, leaning towards for each is a good bet.
 &lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2014/1</title><id>https://nodalynn.com/canada-20141.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20141.html" rel="alternate" /><summary type="html">&lt;h2&gt;Lower Bound on a Finite Fractional Sum&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(a_1, a_2, \dots, a_n\) be positive real numbers whose product is \(1\). Show
 that the sum \[\sum_{i=1}^n \frac{a_i}{\prod_{j=1}^i (1+a_j)}\] is greater than
 or equal to \(\frac{2^n - 1}{2^n}\).

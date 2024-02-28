@@ -28,14 +28,15 @@ values of \(n\). At first, the experimentation will make the problem smell like
 number theory, but after a while, we observe a recursive structure in the
 bounds. From here, we guess that the answer is just \(n\), and the usage of
 strong induction is highly motivated. </p><p>The only point of caution is to not get \(\textit{for each}\) mixed up with
-\(\textit{for some}\).  This is the infamous point-wise trap. When we say that
-\(f(n) \geq n\), we must specify whether this is true for some particular value
-of \(n\), or for each \(n \in \mathbb{N}\). The distinction seems subtle, but the
-consequences are dire.  For example, if \(f(n) \geq n\) is for true for each \(n\),
-then we can safely conclude that \(f(f(n)) \geq f(n)\), whereas if the argument
-is only true for some \(n\), we cannot make such conclusions.</p><p>In fact, there are lines of logic that are even more seemingly subtle than what
-is described above. The famous one is the distinction between \(\textit{for each}
-\) and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)),
-but they can mean completely different things depending on the context. In
-these cases, leaning towards for each is a good bet.
+\(\textit{for some}\). When we say that \(f(n) \geq n\), we must specify whether
+this is true for some particular value of \(n\), or for each \(n \in \mathbb{N}\).
+The consequences of getting this wrong are dire. For example, if \(f(n) \geq n\)
+is for true for each \(n\), then we can safely conclude that \(f(f(n)) \geq f(n)\),
+whereas if the argument is only true for some \(n\), we cannot make such
+conclusions.</p><p>In fact, there are lines of logic that are even more subtle than what is
+described above. The famous one is the distinction between \(\textit{for each} \)
+and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)), but
+they can mean completely different things depending on the context. For
+functional equations in particular, an infamous example would be the so-called
+point-wise trap. In these cases, leaning towards for each is a good bet.
 </p></div></article></article></section></section><footer id="page-footer"><div id="footer-right"><small xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="/legal.html">This website</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-flex;">CC BY-NC-SA 4.0 International</a>  •  © 2023-2024 Lynn Noda</small></div></footer></body>

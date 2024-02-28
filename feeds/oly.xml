@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/oly.xml</id><subtitle>Recent Olympiad Solutions</subtitle><updated>2024-02-28T03:20:15Z</updated><link href="nodalynn.com/feeds/oly.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/oly.xml</id><subtitle>Recent Olympiad Solutions</subtitle><updated>2024-02-28T15:03:25Z</updated><link href="nodalynn.com/feeds/oly.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
 exactly one of them knew the other. Prove that there was someone in the
 gathering that each person either knew or knew someone else who did.
 &lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Call the person that was known to the most number of people \(A\). We claim that
@@ -465,16 +465,17 @@ values of \(n\). At first, the experimentation will make the problem smell like
 number theory, but after a while, we observe a recursive structure in the
 bounds. From here, we guess that the answer is just \(n\), and the usage of
 strong induction is highly motivated. &lt;/p&gt;&lt;p&gt;The only point of caution is to not get \(\textit{for each}\) mixed up with
-\(\textit{for some}\).  This is the infamous point-wise trap. When we say that
-\(f(n) \geq n\), we must specify whether this is true for some particular value
-of \(n\), or for each \(n \in \mathbb{N}\). The distinction seems subtle, but the
-consequences are dire.  For example, if \(f(n) \geq n\) is for true for each \(n\),
-then we can safely conclude that \(f(f(n)) \geq f(n)\), whereas if the argument
-is only true for some \(n\), we cannot make such conclusions.&lt;/p&gt;&lt;p&gt;In fact, there are lines of logic that are even more seemingly subtle than what
-is described above. The famous one is the distinction between \(\textit{for each}
-\) and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)),
-but they can mean completely different things depending on the context. In
-these cases, leaning towards for each is a good bet.
+\(\textit{for some}\). When we say that \(f(n) \geq n\), we must specify whether
+this is true for some particular value of \(n\), or for each \(n \in \mathbb{N}\).
+The consequences of getting this wrong are dire. For example, if \(f(n) \geq n\)
+is for true for each \(n\), then we can safely conclude that \(f(f(n)) \geq f(n)\),
+whereas if the argument is only true for some \(n\), we cannot make such
+conclusions.&lt;/p&gt;&lt;p&gt;In fact, there are lines of logic that are even more subtle than what is
+described above. The famous one is the distinction between \(\textit{for each} \)
+and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)), but
+they can mean completely different things depending on the context. For
+functional equations in particular, an infamous example would be the so-called
+point-wise trap. In these cases, leaning towards for each is a good bet.
 &lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2011/2</title><id>https://nodalynn.com/canada-20112.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20112.html" rel="alternate" /><summary type="html">&lt;h2&gt;Parallelogram in Cyclic Quadrilateral&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(ABCD\) be a cyclic quadrlateral whose opposite sides are not parallel, \(X\)
 the intersection of \(AB\) and \(CD\), and \(Y\) the intersection of \(AD\) and \(BC\).
 Let the angle bisector of \(\angle AXD\) intersect \(AD\), \(BC\), at \(E\), \(F\)
