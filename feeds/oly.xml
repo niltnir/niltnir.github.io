@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/oly.xml</id><subtitle>Recent Olympiad Solutions</subtitle><updated>2024-02-28T00:03:52Z</updated><link href="nodalynn.com/feeds/oly.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/oly.xml</id><subtitle>Recent Olympiad Solutions</subtitle><updated>2024-02-28T03:20:15Z</updated><link href="nodalynn.com/feeds/oly.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
 exactly one of them knew the other. Prove that there was someone in the
 gathering that each person either knew or knew someone else who did.
 &lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Call the person that was known to the most number of people \(A\). We claim that
@@ -158,8 +158,8 @@ Moreover, define the sets \(A_n \coloneqq \{(p,q)\in \mathcal{R}_n \mid p+q&amp;
 \{(p, n) \in \mathcal{R}_n\} \). We derive a few properties of these sets. &lt;/p&gt;&lt;p&gt;By construction, \(A_n\) and \(B_n\) are disjoint sets such that \(A_n \cup B_n =
 \mathcal{R}_n\) (ie.  \(A_n = \mathcal{R}_n \setminus B_n\)). Furthermore, since
 the sum of each pair in \(A_n\) is greater than \(n+1\) and follow the conditions
-satisfied by \(\mathcal{R}_n\), they each appear in the set \(\mathcal{R}_{n+1}\).
-In other words, \(A_n \subset \mathcal{R}_{n+1}\). &lt;/p&gt;&lt;p&gt;\(N_n\) is also the complement of \(A_{n-1}\) with respect to \(\mathcal{R}_{n+1} \).
+satisfied by \(\mathcal{R}_n\), the pairs appear in the set \(\mathcal{R}_{n+1}\).
+In other words, \(A_n \subset \mathcal{R}_{n+1}\). &lt;/p&gt;&lt;p&gt;\(N_n\) is also the complement of \(A_{n-1}\) with respect to \(\mathcal{R}_{n}\).
 \(A_{n-1} \subset \mathcal{R}_n\) from before, and each element of \(A_{n-1}\) is a
 pair whose greatest element is at most \(n-1\). Likewise, \(N_n \subset \mathcal{R}
 _n\), but each element of \(N_n\) is a pair whose greatest element is exectly \(n\).
@@ -376,8 +376,8 @@ Our particular problem asks for the case when \(n = 100\), so \[a_{100} = F_{102
 &lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>USAJMO 2010/2</title><id>https://nodalynn.com/usajmo-20102.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/usajmo-20102.html" rel="alternate" /><summary type="html">&lt;h2&gt;Mysterious Sequence in N&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(n &amp;gt; 1\) be an integer. Find, with proof, all sequences \(x_1, x_2, \dots,
 x_{n-1}\) of positive integers with the following three properties: (a) \(x_1 &amp;lt;
 x_2 &amp;lt; \dots &amp;lt; x_{n-1}\); (b) \(x_i + x_{n-i} = 2n\) for all \(i = 1, 2, \dots, n-1\);
-(c) given any two indices \(i\) and \(j\) (not necessarily distinct for which \(x_i +
-x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
+(c) given any two indices \(i\) and \(j\) (not necessarily distinct) for which \(x_i
++ x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
 &lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We claim that the answer is only the sequence \(2, 4, 6, \dots, 2n - 2\). It is
 easy to verify that all of the conditions are met. (a) and (b) are trivial. To
 verify (c), note that if we divide each of the terms by \(2\), the resulting

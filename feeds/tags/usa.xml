@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/usa.xml</id><subtitle>Tag: usa</subtitle><updated>2024-02-28T00:03:53Z</updated><link href="nodalynn.com/feeds/tags/usa.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/3</title><id>https://nodalynn.com/usamo-19953.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19953.html" rel="alternate" /><summary type="html">&lt;h2&gt;Perpendicular Bisectors and the Lemoine Point&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given a nonisosceles, nonright triangle \(ABC\), let \(O\) denote the center of its
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/usa.xml</id><subtitle>Tag: usa</subtitle><updated>2024-02-28T03:20:15Z</updated><link href="nodalynn.com/feeds/tags/usa.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/3</title><id>https://nodalynn.com/usamo-19953.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19953.html" rel="alternate" /><summary type="html">&lt;h2&gt;Perpendicular Bisectors and the Lemoine Point&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given a nonisosceles, nonright triangle \(ABC\), let \(O\) denote the center of its
 circumscribed circle, and let \(A_1\), \(B_1\), and \(C_1\) be the midpoints of sides
 \(BC\), \(CA\), and \(AB\), respectively. Point \(A_2\) is located on the ray \(OA_1\) so
 that \(OAA_1\) is similar to \(OA_2A\). Points \(B_2\) and \(C_2\) on rays \(OB_1\) and
@@ -101,8 +101,8 @@ indicate computing the reciprocal.
 &lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>USAJMO 2010/2</title><id>https://nodalynn.com/usajmo-20102.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/usajmo-20102.html" rel="alternate" /><summary type="html">&lt;h2&gt;Mysterious Sequence in N&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(n &amp;gt; 1\) be an integer. Find, with proof, all sequences \(x_1, x_2, \dots,
 x_{n-1}\) of positive integers with the following three properties: (a) \(x_1 &amp;lt;
 x_2 &amp;lt; \dots &amp;lt; x_{n-1}\); (b) \(x_i + x_{n-i} = 2n\) for all \(i = 1, 2, \dots, n-1\);
-(c) given any two indices \(i\) and \(j\) (not necessarily distinct for which \(x_i +
-x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
+(c) given any two indices \(i\) and \(j\) (not necessarily distinct) for which \(x_i
++ x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
 &lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We claim that the answer is only the sequence \(2, 4, 6, \dots, 2n - 2\). It is
 easy to verify that all of the conditions are met. (a) and (b) are trivial. To
 verify (c), note that if we divide each of the terms by \(2\), the resulting

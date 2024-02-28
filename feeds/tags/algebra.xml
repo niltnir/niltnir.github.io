@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/algebra.xml</id><subtitle>Tag: algebra</subtitle><updated>2024-02-28T00:03:53Z</updated><link href="nodalynn.com/feeds/tags/algebra.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/2</title><id>https://nodalynn.com/usamo-19952.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19952.html" rel="alternate" /><summary type="html">&lt;h2&gt;Broken Calculator with Trig&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A calculator is broken so that the only keys that still work are the \( \sin\), \(
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/algebra.xml</id><subtitle>Tag: algebra</subtitle><updated>2024-02-28T03:20:15Z</updated><link href="nodalynn.com/feeds/tags/algebra.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/2</title><id>https://nodalynn.com/usamo-19952.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19952.html" rel="alternate" /><summary type="html">&lt;h2&gt;Broken Calculator with Trig&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A calculator is broken so that the only keys that still work are the \( \sin\), \(
 \cos\), and \( \tan\) buttons, and their inverses (the \( \arcsin\), \( \arccos\), and
 \( \arctan\) buttons). The display initially shows \( 0\). Given any positive
 rational number \( q\), show that pressing some finite sequence of buttons will
@@ -255,8 +255,8 @@ Since \(a_1a_2\dots a_n = 1\), by the AM-GM inequality, \[ P_n = \prod_{i=1}
 &lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>USAJMO 2010/2</title><id>https://nodalynn.com/usajmo-20102.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/usajmo-20102.html" rel="alternate" /><summary type="html">&lt;h2&gt;Mysterious Sequence in N&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(n &amp;gt; 1\) be an integer. Find, with proof, all sequences \(x_1, x_2, \dots,
 x_{n-1}\) of positive integers with the following three properties: (a) \(x_1 &amp;lt;
 x_2 &amp;lt; \dots &amp;lt; x_{n-1}\); (b) \(x_i + x_{n-i} = 2n\) for all \(i = 1, 2, \dots, n-1\);
-(c) given any two indices \(i\) and \(j\) (not necessarily distinct for which \(x_i +
-x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
+(c) given any two indices \(i\) and \(j\) (not necessarily distinct) for which \(x_i
++ x_j &amp;lt; 2n\), there is an index \(k\) such that \(x_i + x_j = x_k\).
 &lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We claim that the answer is only the sequence \(2, 4, 6, \dots, 2n - 2\). It is
 easy to verify that all of the conditions are met. (a) and (b) are trivial. To
 verify (c), note that if we divide each of the terms by \(2\), the resulting
