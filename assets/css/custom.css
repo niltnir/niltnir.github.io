@@ -1,6 +1,6 @@
 /*  nodalynn.com - Personal Website of Lynn Noda */
 
-/*  Copyright © 2023 Lynn Noda <lynn@nodalynn.com> */
+/*  Copyright © 2023-2024 Lynn Noda <lynn@nodalynn.com> */
 
 /*  This program is free software: you can redistribute it and/or modify */
 /*  it under the terms of the GNU General Public License as published by */
@@ -25,6 +25,10 @@
  * Dark Cyan: #048A81
  * Rich Black: #0D1821
  * */
+
+html {
+    overflow-y: hidden;
+}
 
 html, body {
     width: 100%;
@@ -91,7 +95,7 @@ hr.gap {
     margin-bottom: 0.6em;
 }
 
-hr.prose {
+hr.posts {
     margin-top: 1em;
     margin-bottom: 1em;
 }

@@ -1,24 +1,199 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/geometry.xml</id><subtitle>Tag: geometry</subtitle><updated>2023-12-25T13:54:24Z</updated><link href="nodalynn.com/feeds/tags/geometry.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Binging Euclidean Geometry</title><id>https://nodalynn.com/binging-euclidean-geometry.html</id><author><name></name></author><updated>2023-12-23T04:46:00Z</updated><link href="https://nodalynn.com/binging-euclidean-geometry.html" rel="alternate" /><summary type="html">&lt;h2&gt;Euclidean Geometry is Underrated&lt;/h2&gt;&lt;p&gt;This is the story of how cyclic quadrilaterals, radical axes, and homothety
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/geometry.xml</id><subtitle>Tag: geometry</subtitle><updated>2024-02-27T23:49:59Z</updated><link href="nodalynn.com/feeds/tags/geometry.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/3</title><id>https://nodalynn.com/usamo-19953.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19953.html" rel="alternate" /><summary type="html">&lt;h2&gt;Perpendicular Bisectors and the Lemoine Point&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given a nonisosceles, nonright triangle \(ABC\), let \(O\) denote the center of its
+circumscribed circle, and let \(A_1\), \(B_1\), and \(C_1\) be the midpoints of sides
+\(BC\), \(CA\), and \(AB\), respectively. Point \(A_2\) is located on the ray \(OA_1\) so
+that \(OAA_1\) is similar to \(OA_2A\). Points \(B_2\) and \(C_2\) on rays \(OB_1\) and
+\(OC_1\), respectively, are defined similarly. Prove that lines \(AA_2\), \(BB_2\),
+and \(CC_2\) are concurrent, i.e. these three lines intersect at a point.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The main claim is that \(AA_2\), \(BB_2\), and \(CC_2\) are the symmedians of
+\(\triangle{ABC}\). &lt;/p&gt;&lt;p&gt;WLOG, we show that \(AA_2\) is the \(A\)-symmedian of \(\triangle{ABC}\). By the
+symmedian construction, it suffices to prove that \(\angle OBA_2 = 90^\circ =
+\angle OCA_2\). The given similar triangles yield \[ OA_1 \cdot OA_2 = OA^2 =
+OB^2.\] Then, we have \(OB^2 = OA_1 \cdot OA_2 \iff \frac{OB}{OA_1} = \frac{OA_2}
+{OB}\) and \(\angle BOA_1 = \angle BOA_2\). Hence, triangles \(BOA_1\) and \(A_2OB\)
+are similar. Since \(OA_1\) is the perpendicular bisector of side \(\overline{BC}\),
+\(\angle OBA_2 = 90^\circ\). These arguments can be repeated for \(\angle OCA_2\),
+so we get \(\angle OBA_2 = 90^\circ = \angle OCA_2\) as desired.&lt;/p&gt;&lt;p&gt;\(BB_2\) and \(CC_2\) are then also symmedians of \(\triangle{ABC}\) and it is well
+known that the symmedians of a triangle concur at the Lemoine point.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 1991/3</title><id>https://nodalynn.com/canada-19913.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/canada-19913.html" rel="alternate" /><summary type="html">&lt;h2&gt;Midpoints Lie on a Circle&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(C\) be a circle and \(P\) a given point in the plane. Each line
+through \(P\) which intersects \(C\) determines a chord of \(C\). Show that the
+midpoints of these chords lie on a circle.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(O\) be the center of circle \(C\). The diameter of \(C\) passing through \(P\)
+passes through the midpoint \(O\), so the locus contains \(O\). Now consider the
+midpoint \(Q\) (\(\neq O, P\)) of some chord \(q\) passing through \(P\). Since \(Q\)
+bisects chord \(q\), note that \(OQ\) is perpendicular to \(q\). In other words,
+\(\angle OQP = 90^\circ\). As such, \(Q\) lies on the circle whose diameter is
+\(OP\). This is true regardless of the choice of \(q,\) so any midpoint \(Q\) will
+lie on the circle with diameter \(OP\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Monge's Theorem</title><id>https://nodalynn.com/monges-theorem.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/monges-theorem.html" rel="alternate" /><summary type="html">&lt;h2&gt;Fun with Menelaus' Thoerem&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Suppose we are given three non-congreuent circles in the plane. It is possible
+to draw the external tangents for each pair of circles so that they intersect at
+a point. Prove that these points are collinear.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let the three circles be \(\omega_1\), \(\omega_2\), and \(\omega_3\), and their
+centers be \(O_1\), \(O_2\), and \(O_3\) respectively. Furthermore, let \(X\) be the
+intersection of the tangents between \(\omega_1\), \(\omega_2\), and define \(Y\) and
+\(Z\) similarly.&lt;/p&gt;&lt;p&gt;WLOG, consider a single external tangent between, say, \(\omega_1\) and
+\(\omega_2\). If we let the point of tangency on \(\omega_1\) be \(M\) and the point
+of tangency on \(\omega_2\) be \(N\), then clearly, \(M\), \(N\), \(X\) are collinear.
+Moreover, \(\measuredangle O_1MX = 90^\circ = \measuredangle O_2NX\), and \(O_1\),
+\(O_2\), \(X\) are collinear. Thus, \(\triangle{O_1MX}\) is similar to
+\(\triangle{O_2NX}\) with \[ \left|\frac{O_1X}{O_2X}\right| = \left|\frac{O_1M}
+{O_2N}\right| = \frac{r_1}{r_2},\] where \(r_1\) and \(r_2\) are the radii of
+\(\omega_1\) and \(\omega_2\) respectively. Thus, it also follows that
+\(\left|\frac{O_2Y}{O_3Y}\right| =  \frac{r_2}{r_3} \), and \(\left|\frac{O_3Z}
+{O_1Z}\right| =  \frac{r_3}{r_1}\).&lt;/p&gt;&lt;p&gt;Finally, consider the points \(O_1\), \(O_2\), and \(O_3\). If the points are
+collinear, the theorem is obviously true; all the intersections lie on a line.
+On the other hand, if the points form a triangle \(\triangle{O_1O_2O_3}\), then we
+get a case of Menelaus' Theorem. \[\frac{O_1X}{XO_2}\cdot\frac{O_2Y}{YO_3}
+\cdot\frac{O_3Z}{ZO_1} = \left(-\frac{r_1}{r_2}\right)\left(-\frac{r_2}
+{r_3}\right)\left(-\frac{r_3}{r_1}\right) = -1,\]
+where the length ratios are directed.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Japan 2009/4</title><id>https://nodalynn.com/japan-20094.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/japan-20094.html" rel="alternate" /><summary type="html">&lt;h2&gt;Shooting Lemma on an Angle Equality&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(\Gamma\) be the circumcircle of triangle \(ABC\). A circle with center \(O\) is
+tangent to side \(BC\) at point \(P\) and tangent to the arc \(BC\) of \(\Gamma\) not
+containing \(A\) at point \(Q\). Prove that if \(\angle{BAO} = \angle{CAO}\), then
+\(\angle{PAO} = \angle{QAO}\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(M\) be the midpoint of arc \(BC\) containing \(A\), \(N \neq A\) be the
+intersection of line \(AO\) with \(\Gamma\), \(O_{\Gamma}\) be the center of \(\Gamma\),
+and \(\omega\) be the circle with center \(O\) described in the problem statement.&lt;/p&gt;&lt;p&gt;\(M\), \(P\), and \(Q\) are then collinear by the so called \(\textit{shooting lemma}\),
+which we prove as follows. It is clear that there exists a homothety mapping
+\(\omega\) to \(\Gamma\), since \(O_\Gamma\), \(O\), and \(Q\) are collinear, \(MO_{\Gamma}
+\) is parallel to \(PO\) (both perpendicular to \(\overline{BC})\), and both
+\(\triangle{MO_{\Gamma}Q}\) and \(\triangle{POQ}\) are isosceles. Consequently, \(M\),
+\(P\), and \(Q\) are collinear.&lt;/p&gt;&lt;p&gt;We now claim that \(M\), \(O_{\Gamma}\), \(N\) are also collinear. We have \[
+\measuredangle CBN = \measuredangle CAN = \measuredangle CAO = \measuredangle
+OAB = \measuredangle NAB = \measuredangle NCB, \] so \(N\) must be the midpoint of
+arc \(\widehat{BC}\) not containing \(A\). Thus, \(MN\) is simply the diameter of
+\(\Gamma\).&lt;/p&gt;&lt;p&gt;We now use the above to show that \(A\), \(P\), \(O\), \(Q\) are concyclic. Using the
+homothety defined above, we see that \[ \measuredangle OPQ = \measuredangle
+O_{\Gamma}MQ = \measuredangle NMQ = \measuredangle NAQ = \measuredangle OAQ, \]
+so \(A\), \(P\), \(O\), \(Q\) are concyclic.&lt;/p&gt;&lt;p&gt;Lastly, since \(\triangle{OPQ}\) is isosceles, \[ \measuredangle QAO =
+\measuredangle QPO = \measuredangle OQP = \measuredangle OAP.  \]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Once the configuration for the shooting lemma is found, the key observation is
+that \(A\), \(P\), \(O\), and \(Q\) are concyclic. This requires discovering point \(N\)
+along the way, which is both the antipode of \(M\) and the intersection of \(AO\)
+with \(\Gamma\).
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2015/2</title><id>https://nodalynn.com/canada-20152.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20152.html" rel="alternate" /><summary type="html">&lt;h2&gt;An Inequality on the Product of Altitude Components&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(ABC\) be an acute-angled triangle with altitudes \(AD\), \(BE\), and \(CF\). Let
+\(H\) be the orthocentre, that is the point where the altitudes meet. Prove that
+\[\frac{AB\cdot AC + BC\cdot BA + CA\cdot CB}{AH\cdot AD + BH\cdot BE + CH\cdot
+CF} \leq 2.\]
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;p&gt;I should come back to clean up this solution because it's embarrassingly
+long... But nonetheless, here is &lt;em&gt;a&lt;/em&gt; solution:&lt;/p&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(a\), \(b\), \(c\) denote the lengths of the sides \(BC\), \(AC\), and \(AB\)
+respectively. We begin with an obvious statement of AM-GM:
+\[ab + bc + ca \leq a^2 + b^2 + c^2\] is equivalent to
+\[\begin{align*}
+    \frac{1}{a} + \frac{1}{b} + \frac{1}{c} 
+    &amp;amp;\leq \frac{a^2 + b^2 + c^2}{abc} \\
+    &amp;amp;= \frac{\left(c^2 + b^2 - a^2\right) + \left(a^2 + c^2 - b^2\right) + \left(a^2 + b^2 - c^2\right)}{abc} \\
+    &amp;amp;= 2\left(\frac{\cos A}{a} + \frac{\cos B}{b} + \frac{\cos C}{c}\right).
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Now suppose \(x = c\cdot AF\), \(y = a\cdot BD\), and \(z = b\cdot CE\). We claim that
+\[\begin{align*} 
+    x\cos B\cos C &amp;amp;= \frac{xyz}{a^2bc},\\ 
+    y\cos C\cos A &amp;amp;= \frac{xyz}{ab^2c}, \\
+    z\cos A\cos B &amp;amp;= \frac{xyz}{abc^2}.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;By the symmetry of the configuration, WLOG it suffices to show that \(x\cos B\cos
+C = \frac{xyz}{a^2bc}\). We have
+\[\begin{align*}
+    x\cos B\cos C 
+    &amp;amp;= c\cdot AF\cdot\cos B\cos C \\
+    &amp;amp;= (c\cos B)\cdot AF\cdot\cos C \\
+    &amp;amp;= BD\cdot AF\cdot \frac{CE}{a} \\
+    &amp;amp;= \frac{xyz}{a^2bc}.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Multiplying both sides of our derived inequality by \(\frac{xyz}{abc}\), we get 
+\[\begin{align*}
+    &amp;amp;\quad \sum_{cyc}\frac{xyz}{a^2bc} \leq 2\sum_{cyc}\left(\frac{xyz}{a^2bc}\cos A\right)\\
+    \iff&amp;amp;\quad \sum_{cyc}x\cos B\cos C \leq 2(x+y+z)\cos A\cos B\cos C\\
+    \iff&amp;amp;\quad \frac{x}{\cos A} + \frac{y}{\cos B} + \frac{z}{\cos C} \leq 2(x+y+z),
+\end{align*}\]&lt;/p&gt;&lt;p&gt;where the cyclic sum is taken across the triplet \((a\), \(b\), \(c)\), the triplet
+\((x\), \(y\), \(z)\), and the triplet \((A\), \(B\), \(C)\). Also note that \(0 &amp;lt; \cos A\),
+\(\cos B\), \(\cos C &amp;lt; 1\) since \(ABC\) is acute. Now observe that \[ \frac{x}
+{\cos A} = \frac{c\cdot AF}{\cos A} = \frac{c\cdot AF\cdot b}{AF} = bc,\] as
+well as \(\frac{y}{\cos B}=ab\) and \(\frac{z}{\cos C} = ca\). Furthermore, it is
+well known that the points \(F\), \(B\), \(D\), \(H\), the points \(H\), \(D\), \(C\), \(E\),
+and the points \(E\), \(A\), \(F\), \(H\) are respectively concyclic, so by the power
+of a point, &lt;/p&gt;&lt;p&gt;\[\begin{align*}
+    x &amp;amp;= c\cdot AF = AH\cdot AD, \\
+    y &amp;amp;= a\cdot BD = BH\cdot BE, \\
+    z &amp;amp;= b\cdot CE = CH\cdot CF.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Substituting for the inequality above gives us \[ \frac{AB\cdot AC + BC\cdot BA
++ CA\cdot CB}{AH\cdot AD + BH\cdot BE + CH\cdot CF} \leq 2.\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The motivation for the solution is to think about how to interpret each product
+that appears in the expression on the left-hand side. Initially, the products
+\(AB\cdot AC\), \(BC\cdot BA\), and \(CA\cdot CB\) motivate us to think about area,
+but this line of thought is shot down by the fact that \(\sin\) doesn't give us
+the lengths we care about. The lengths we care about are the ones that appear
+in the problem statement as well as the ones that can be derived from power of
+a point.&lt;/p&gt;&lt;p&gt;With this train of thought however, one might reach the critical insight, which
+is that \[AB\cdot AC\cdot\cos A = AB\cdot AC\cdot \frac{AE}{AB} = AE\cdot AC =
+AH\cdot AD,\] where the same relation holds for the other angles. A natural
+train of thought is: if \(\sin\) didn't work, why not \(\cos\)? Or one can realize
+that \(AE\) is the projection of \(AB\) onto side \(AC\). Or instead of thinking
+about areas, think about dot products. Any one of these should lead to this key
+insight.&lt;/p&gt;&lt;p&gt;From here, the problem becomes substantially easier, so the rest is mostly
+algebraic and geometric grunt work.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2011/2</title><id>https://nodalynn.com/canada-20112.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20112.html" rel="alternate" /><summary type="html">&lt;h2&gt;Parallelogram in Cyclic Quadrilateral&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(ABCD\) be a cyclic quadrlateral whose opposite sides are not parallel, \(X\)
+the intersection of \(AB\) and \(CD\), and \(Y\) the intersection of \(AD\) and \(BC\).
+Let the angle bisector of \(\angle AXD\) intersect \(AD\), \(BC\), at \(E\), \(F\)
+respectively and let the angle bisector of \(\angle AYB\) intersect \(AB\), \(CD\) at
+\(G\), \(H\) respectively. Prove that \(EFGH\) is a parallelogram.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We show that \(EF\) bisects \(HG\) and vice versa. To begin, let \(Z = XF\cap YH\). We
+then compute the value of \(\angle XZY\):
+\[\begin{align*}
+    \angle XZY &amp;amp;= \angle EZY \\
+               &amp;amp;= 180^\circ - (\angle EYZ + \angle ZEY) \\
+               &amp;amp;= 180^\circ - (\angle EYZ + \angle EXA + \angle XAE) \\
+               &amp;amp;= 180^\circ - (\angle DYH + \angle FXB + \angle DCB) \\
+               &amp;amp;= 180^\circ - \left[\frac{1}{2}\left(\widehat{CD} - \widehat{AB}\right) + \left(\widehat{BC} - \widehat{DA}\right) + \angle DCB\right] \\
+               &amp;amp;= 180^\circ - \left(\frac{1}{2}\widehat{BCD} - \frac{1}{2}\widehat{DAB} + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - \left(\frac{1}{2}\angle BAD - \frac{1}{2}\angle DCB + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - \frac{1}{2}\left(\angle BAD + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - 90^\circ = 90^\circ.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Thus we deduce that \(XZ\) is perpendicular to \(YZ\). Now consider \(\triangle{HXG}\)
+and \(\triangle{EYF}\). Segments \(\overline{XZ}\) and \(\overline{YZ}\) are each both
+an angle bisector and an altitude of \(\triangle{HXG}\) and \(\triangle{EYF}\)
+respectively. It follows that the triangles are both isosceles, and in
+particular, \(XZ\) bisects \(\overline{HG}\) and \(YZ\) bisects \(\overline{EF}\). \(E\)
+and \(F\) are on \(XZ\), and \(G\) and \(H\) are on \(YZ\) respectively, so the result has
+been proven.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Japan 2010/1</title><id>https://nodalynn.com/japan-20101.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/japan-20101.html" rel="alternate" /><summary type="html">&lt;h2&gt;The Foot is the Circumcenter&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given an acute-angled triangle \(ABC\) such that \(AB \neq AC\), let \(H\) be the
+foot of the altitude from \(A\) to \(BC\). The points \(P\) and \(Q\) are defined in
+such a way that if the three points \(A\), \(B\), \(P\) and the three points \(A\), \(C\),
+\(Q\) are collinear in this order respectively, then the four points \(B\), \(C\),
+\(P\), \(Q\) are concyclic and \(HP = HQ\). Prove that \(H\) is the circumcenter of
+triangle \(APQ\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(O\) be the circumcenter of \((APQ)\) and \(H'\) be the foot of the altitude
+from \(A\) to side \(PQ\). We show that \(H = O\).&lt;/p&gt;&lt;p&gt;First, observe that \(\triangle{APQ}\) is similar to \(\triangle{ACB}\) since
+\(\measuredangle PAQ = - \measuredangle CAB\) and \(\measuredangle APQ =
+\measuredangle BPQ = \measuredangle BCQ = -\measuredangle ACB\). Consequently,
+\(\measuredangle PAH' = \measuredangle CAH\), so \(AH'\) is the isogonal of \(AH\)
+(and vice versa) with respect to \(\triangle{APQ}\).&lt;/p&gt;&lt;p&gt;Next, we show that \(O\) lies on \(AH\). Since the orthocenter of \(\triangle{APQ}\)
+lies on \(AH'\), and \(AH\) is the isogonal of \(AH'\), the result follows. In other
+words, \[ \measuredangle QAO = 90^\circ - \measuredangle APQ = \measuredangle
+PAH' = \measuredangle CAH.\]&lt;/p&gt;&lt;p&gt;Finally, it is well known that \(O\) lies on the perpendicular bisectors of
+\(\triangle{APQ}\). In particular, consider the perpendicular bisector of side
+\(PQ\), say \(\ell\). \(O\) must be the intersection of \(AH\) and \(\ell\). Since \(HP =
+HQ\), \(H\) is preceisely that intersection. Hence, \(O = AH\cap\ell = H\) as
+desired.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The notorious fact that the orthocenter and the circumcenter are isogonal
+conjugates appears. This problem is a prototypical example of its application.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Binging Euclidean Geometry</title><id>https://nodalynn.com/binging-euclidean-geometry.html</id><author><name></name></author><updated>2023-12-23T04:46:00Z</updated><link href="https://nodalynn.com/binging-euclidean-geometry.html" rel="alternate" /><summary type="html">&lt;h2&gt;Euclidean Geometry is Underrated&lt;/h2&gt;&lt;p&gt;This is the story of how cyclic quadrilaterals, radical axes, and homothety
 have gradually taken over my life.&lt;/p&gt;&lt;p&gt;After publishing the initial site, I decided to take a break from code to do
 something else for a while. At first I was considering drawing sketches or
 solving combinatorics problems, but strangely enough, I found myself picking up
 a geometry book I bought some years ago.&lt;/p&gt;&lt;p&gt;If you've read my math page, you'll know that I enjoy discrete math, so it was
 quite odd for me to suddenly crave for geometry. Perhaps the appeal was the
 pretty diagrams I got to draw with compass and straightedge. I admit, there is
-a certain meditative quality in patiently turning words into pictures.&lt;/p&gt;&lt;p&gt;As I slowly made way through the book, propositions, theorems, and lemmas flew
-onto sheets of paper. And as I got acquainted with these objects, I started
-solving some exercises. Soon I was craving to get past the theory to dive
-straight into the wild west of exhilarating problems.&lt;/p&gt;&lt;p&gt;One fun problem&lt;code&gt;(sidenote &amp;quot;The solution can be found elsewhere. If motivation permits, I will post the solution on this site.&amp;quot;)&lt;/code&gt; I was immediately confronted
-with was the following:&lt;/p&gt;&lt;p&gt;&lt;em&gt;Given a circle and a point inside of it, take all the chords through the point
-and aggregate their midpoints. Prove that the resulting figure is a circle with
-its diameter defined between the point and the center of the circle.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;The beauty of Euclidean geometry lies in its simple character. There are no
-crazy equations&lt;code&gt;(sidenote &amp;quot;With the exceptions of rectilinear coordinates, complex numbers, barycentric coordinates, linear algebra, etc.&amp;quot;)&lt;/code&gt;, no confusing
+a certain meditative quality in patiently turning words into pictures.&lt;/p&gt;&lt;p&gt;Anyways, I made my way through the book and got acquainted with propositions,
+theorems, and lemmas as I worked them out on sheets of paper. Eventually I
+started solving some exercises, and soon I was craving to get past the theory
+to dive right into the wild west of exhilarating problems.&lt;/p&gt;&lt;p&gt;One fun problem&lt;label for=&quot;sn-914751-453890&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-914751-453890&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;For those impatiently curious, the solution is on this site.&lt;/span&gt; I was immediately confronted with was the following:&lt;/p&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(C\) be a circle and \(P\) a given point in the plane. Each line
+through \(P\) which intersects \(C\) determines a chord of \(C\). Show that the
+midpoints of these chords lie on a circle.
+&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The beauty of Euclidean geometry lies in its simple character. There are no
+crazy equations&lt;label for=&quot;sn-693771-234791&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-693771-234791&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;With the exceptions of rectilinear coordinates, complex numbers, barycentric coordinates, linear algebra, etc.&lt;/span&gt;, no confusing
 objects, no fancy notation, yet results are often astonishing. It's no wonder
-that geometry is called the &lt;strong&gt;king&lt;/strong&gt; of mathematics. I guess in this sense,
-it's closer to the elegance of discrete math than it is to, say, algebra or
-analysis.&lt;/p&gt;&lt;p&gt;Unfortunately, geometry gets a bad rap in conventional education and other
+that geometry is called the &lt;strong&gt;king&lt;/strong&gt; of mathematics. And strangely, the process
+of exploring and solving problems synthetically can often feel close to
+discrete math.&lt;/p&gt;&lt;p&gt;Unfortunately, geometry gets a bad rap in conventional education and other
 academic institutions. It's often written off as &amp;quot;useless&amp;quot; and &amp;quot;trivial&amp;quot; by
-many. In fact, Euclidean geometry is a dead topic among professional
+many. In fact, Euclidean geometry is a dead topic among &lt;em&gt;most&lt;/em&gt; professional
 mathematicians despite its historical origins. In a way though, the field is a
 hidden gem—detached from the world, only showing itself to those who seek it.&lt;/p&gt;&lt;p&gt;It's often hard as a beginner to recognize the depth to which something simple
 manifests. When I tried getting into geometry years ago, the theory seemed too
@@ -27,8 +202,8 @@ depth that this humble subject has to offer. This is especially true after
 solving many beautifully crafted Olympiad problems.&lt;/p&gt;&lt;p&gt;Of course, now that I have pages filled with diagrams of problems and solutions,
 it only worsens my ever-increasing queue of &amp;quot;math to convert to LaTeX&amp;quot;.
 Diagrams are also more tedious because it requires additional tools like
-Asymptote.&lt;/p&gt;&lt;p&gt;Nonetheless, geometry has a new place in my heart. Gone are the days of &lt;em&gt;yet
+Asymptote.&lt;/p&gt;&lt;p&gt;Nonetheless, geometry has a new place in my heart. Gone are the days of &lt;em&gt;just
 another find the length problem&lt;/em&gt;. It's a field where more of its magic is
 revealed to you the deeper you go. But go too far, and you'll start looking for
-concyclic points in stars and raindrops.&lt;code&gt;(sidenote &amp;quot;This is the famous Tetris effect. My record is having diagrams appear in my dream. Besides geometry and Tetris, I've also dreamt of Lisp code.&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;p&gt;That's pretty much what I've been up to lately. Excuse my bad writing, this is
+concyclic points in stars and raindrops.&lt;label for=&quot;sn-638054-186245&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-638054-186245&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;This is the famous Tetris effect. My record is having diagrams appear in my dream. Besides geometry and Tetris, I've also dreamt of Lisp code.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;That's pretty much what I've been up to lately. Excuse my bad writing, this is
 being written at 4 AM in the morning (revised a day later). ;p&lt;/p&gt;</summary></entry></feed>

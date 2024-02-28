@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/classic.xml</id><subtitle>Tag: classic</subtitle><updated>2024-02-27T23:49:59Z</updated><link href="nodalynn.com/feeds/tags/classic.xml" rel="self" /><link href="nodalynn.com" /><entry><title>USAMO 1995/2</title><id>https://nodalynn.com/usamo-19952.html</id><author><name></name></author><updated>2024-02-22T11:32:00Z</updated><link href="https://nodalynn.com/usamo-19952.html" rel="alternate" /><summary type="html">&lt;h2&gt;Broken Calculator with Trig&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A calculator is broken so that the only keys that still work are the \( \sin\), \(
+\cos\), and \( \tan\) buttons, and their inverses (the \( \arcsin\), \( \arccos\), and
+\( \arctan\) buttons). The display initially shows \( 0\). Given any positive
+rational number \( q\), show that pressing some finite sequence of buttons will
+yield the number \( q\) on the display. Assume that the calculator does real
+number calculations with infinite precision. All functions are in terms of
+radians.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Define the set \(\sqrt\mathbb{Q} \coloneqq \{\,q &amp;gt; 0 \mid q^2 \in \mathbb{Q}\, \}
+\supset \mathbb{Q}\). Let us then define the functions \(f,g: \sqrt\mathbb{Q}
+\to\sqrt\mathbb{Q}\) from the calculator buttons. We have \[f(r)
+    \coloneqq \tan\left(\arcsin\left(\cos\left(\arctan r\right)\right)\right) =
+    \tan\left(\frac{\pi}{2} - \arctan r\right) = \frac{1} {r},\] and \[g(r)
+\coloneqq \cos\left(\arctan r\right) = \frac{1} {\sqrt{1 + r^2}}.\] Obviously
+\(f\) is bijective because its inverse is defined as itself. On the other hand,
+\(g\) is also bijective as its inverse is defined as \(g^{-1}(r) =
+\tan\left(\arccos r\right) = \frac{\sqrt{1-r^2}}{r}\) where \(r\) is in the range
+of \(g\).&lt;/p&gt;&lt;p&gt;Suppose we are given some number \(q\in\sqrt\mathbb{Q}\) to compute. Starting at
+\(0\), we can first apply \(\cos\) to get \(1\). We then show that it is possible to
+iteratively apply \(f\) and \(g\) a finite number of times to achieve \(q\). Since
+\(f\) and \(g\) are bijective, this is equivalent to showing that we can
+iteratively apply inverses \(f^{-1}\) and \(g^{-1}\) a finite number of times to
+get from \(q\) to \(1\).&lt;/p&gt;&lt;p&gt;Define a function \(c: \sqrt \mathbb{Q} \to \sqrt \mathbb{Q}\)  as 
+\[ c(q) \coloneqq 
+\begin{cases}
+    f^{-1}(q) = \frac{1}{q} &amp;amp; \text{if } q &amp;gt; 1 \\
+    1 &amp;amp; \text{if } q = 1 \\
+    g^{-1}(q) = \frac{\sqrt{1-r^2}}{r} &amp;amp; \text{if } 1 &amp;gt; q &amp;gt; 0
+\end{cases}. \] We prove that \[
+\underbrace{c(c(c(... c}_n(q) ...))) = 1,\] for some positive integer \(n\).&lt;/p&gt;&lt;p&gt;Letting \(q = \sqrt\frac{a}{b} = \frac{\sqrt a}{\sqrt b}\), for relatively prime
+\(a, b \in \mathbb{Z}^{+}\), we get the following cases: If \(a &amp;gt; b\), then \(c(q) =
+c\left(\frac{\sqrt a}{\sqrt b}\right) = \frac{\sqrt b} {\sqrt a}\). If \(a=b\),
+then \(c(q) = 1\). If \(b &amp;gt; a\), then \[ c(q) = c\left(\frac{\sqrt a}{\sqrt b}
+    \right) = \frac{\sqrt{1 - \frac{a}{b}}}{\sqrt\frac{a}{b}} = \frac{\sqrt {b
+- a}}{\sqrt a} .\]&lt;/p&gt;&lt;p&gt;We don't need to consider when \(a = b\), since it clearly satisfies our claim.
+Now consider the sum of the squares of the numerator and the denominator when
+\(q\) maps to \(c(q)\). For \(q,\) this sum is initially \(a+b\). For \(c(q)\), we either
+get \(b+a\) or \(b - a + a = b\). Since \(b + a\), \(b \leq a + b\), notice that every
+application of \(c\) monotonically decreases this sum by a positive integer.
+It is also impossible to have infinite applications of the first case where
+this sum doesn't decrease, so enough applications of \(c\) must bring the sum
+down until \(a = b = 1\), at which point we are done.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We want nestings of functions to yield rational values, so there are certain
+cases that scream \(\textit{don't go there!}\) Expressions like \(\sin \sqrt k\),
+\(\cos \sqrt k\), \(\arcsin \frac{m\pi}{n}\), \(\arccos \frac{m\pi} {n}\), etc.  are
+such examples. In particular, we don't want ratios of the sides of a traingle
+holding factors of \(\pi\). The angle conditions can be a little more relaxed
+because we can define the angle whose slope is some rational \(q\).&lt;/p&gt;&lt;p&gt;So it's rather clear that there will be two kinds of numbers that appear on the
+calculator. Those that represent angles and those that represent side ratios.
+To get all the rational numbers, we will most likely focus on extracting it
+from side ratios. There is also alternation between angle values and ratio
+values. Therefore, it's practically impossible to have a repeat of the same
+kind of trig function; it must alternate between \(\sin\), \(\cos\), and \(\tan\) to
+one of their inverses.&lt;/p&gt;&lt;p&gt;We can try listing all possible ways of mapping these functions to see what
+happens. Begin with some triangle side ratio \(t\) (not necessarily rational).
+\(t\) can map to the following:
+\[\begin{align*}
+    f_1(t) &amp;amp;= \cos\left(\arctan t\right) = \frac{1}{\sqrt{1 + t^2}} \\
+    f_2(t) &amp;amp;= \sin\left(\arctan t\right) = \frac{t}{\sqrt{1 + t^2}} \\
+    f_3(t) &amp;amp;= \tan\left(\arcsin t\right) = \frac{t}{\sqrt{1 - t^2}} \\
+    f_4(t) &amp;amp;= \tan\left(\arccos t\right) = \frac{\sqrt{1 - t^2}}{t}
+\end{align*}\]&lt;/p&gt;&lt;p&gt;We will now try to get all the rationals. Consider what it means for some
+rational number \(m\) to be \(\textit{computable}.\) If it were computable, then
+persumably, from the above logic, it will come out of one of \(f_1(t)\), \(f_2(t)\),
+\(f_3(t)\), or \(f_4(t)\). So let's just see what happens when we let \[ m = f_1(t)
+. \]&lt;/p&gt;&lt;p&gt;For the relation to hold, we must have
+\[\begin{align*}
+    &amp;amp;\quad m = \frac{1}{\sqrt{1 + t^2}} \\
+    \iff&amp;amp;\quad m^2\left(1 + t^2\right) = 1 \\
+    \iff&amp;amp;\quad m^2t^2 = 1 - m^2 \\
+    \iff&amp;amp;\quad t^2 = \frac{1 - m^2}{m^2} \\
+    \iff&amp;amp;\quad t = \frac{\sqrt{1 - m^2}}{m},
+\end{align*}\]
+where each equation above is bidirectional since \(m\), \(t &amp;gt; 0\).&lt;/p&gt;&lt;p&gt;So if \(m\) is computable, then \(t\) must again be computable from one of \(f_1\),
+\(f_2\), \(f_3\), or \(f_4\). We can then try the above method again, reach another
+value \(t_1\), and send that back into, say \(f_1\), and so on. Once we hit a value
+we know for certain is computable, then we know that unwinding all the
+operations should give us a valid way to compute \(m\). This can be seen for the
+value \(q = \frac{4}{5}\) below:&lt;/p&gt;&lt;p&gt;\[q = \frac{4}{5} \ {\color{blue} \to} \ \frac{3}{4} \ {\color{blue} \to} \
+\frac{\sqrt 7}{3} \ {\color{blue} \to} \ \frac{\sqrt 2}{\sqrt 7} \
+{\color{blue} \to} \ \frac{\sqrt 5}{\sqrt 2} \ {\color{red} \to} \
+\frac{\sqrt 2}{\sqrt 5} \ {\color{blue} \to} \ \frac{\sqrt 3}{\sqrt 2} \
+{\color{red} \to} \ \frac{\sqrt 2}{\sqrt 3} \ {\color{blue} \to} \
+\frac{1}{\sqrt 2} \ {\color{blue} \to} \ 1 \ {\to} \ 0\]&lt;/p&gt;&lt;p&gt;The blue arrows indicate computing \(t\) from \(m\) as above. The red arrows
+indicate computing the reciprocal.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 1991/3</title><id>https://nodalynn.com/canada-19913.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/canada-19913.html" rel="alternate" /><summary type="html">&lt;h2&gt;Midpoints Lie on a Circle&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(C\) be a circle and \(P\) a given point in the plane. Each line
+through \(P\) which intersects \(C\) determines a chord of \(C\). Show that the
+midpoints of these chords lie on a circle.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(O\) be the center of circle \(C\). The diameter of \(C\) passing through \(P\)
+passes through the midpoint \(O\), so the locus contains \(O\). Now consider the
+midpoint \(Q\) (\(\neq O, P\)) of some chord \(q\) passing through \(P\). Since \(Q\)
+bisects chord \(q\), note that \(OQ\) is perpendicular to \(q\). In other words,
+\(\angle OQP = 90^\circ\). As such, \(Q\) lies on the circle whose diameter is
+\(OP\). This is true regardless of the choice of \(q,\) so any midpoint \(Q\) will
+lie on the circle with diameter \(OP\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Monge's Theorem</title><id>https://nodalynn.com/monges-theorem.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/monges-theorem.html" rel="alternate" /><summary type="html">&lt;h2&gt;Fun with Menelaus' Thoerem&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Suppose we are given three non-congreuent circles in the plane. It is possible
+to draw the external tangents for each pair of circles so that they intersect at
+a point. Prove that these points are collinear.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let the three circles be \(\omega_1\), \(\omega_2\), and \(\omega_3\), and their
+centers be \(O_1\), \(O_2\), and \(O_3\) respectively. Furthermore, let \(X\) be the
+intersection of the tangents between \(\omega_1\), \(\omega_2\), and define \(Y\) and
+\(Z\) similarly.&lt;/p&gt;&lt;p&gt;WLOG, consider a single external tangent between, say, \(\omega_1\) and
+\(\omega_2\). If we let the point of tangency on \(\omega_1\) be \(M\) and the point
+of tangency on \(\omega_2\) be \(N\), then clearly, \(M\), \(N\), \(X\) are collinear.
+Moreover, \(\measuredangle O_1MX = 90^\circ = \measuredangle O_2NX\), and \(O_1\),
+\(O_2\), \(X\) are collinear. Thus, \(\triangle{O_1MX}\) is similar to
+\(\triangle{O_2NX}\) with \[ \left|\frac{O_1X}{O_2X}\right| = \left|\frac{O_1M}
+{O_2N}\right| = \frac{r_1}{r_2},\] where \(r_1\) and \(r_2\) are the radii of
+\(\omega_1\) and \(\omega_2\) respectively. Thus, it also follows that
+\(\left|\frac{O_2Y}{O_3Y}\right| =  \frac{r_2}{r_3} \), and \(\left|\frac{O_3Z}
+{O_1Z}\right| =  \frac{r_3}{r_1}\).&lt;/p&gt;&lt;p&gt;Finally, consider the points \(O_1\), \(O_2\), and \(O_3\). If the points are
+collinear, the theorem is obviously true; all the intersections lie on a line.
+On the other hand, if the points form a triangle \(\triangle{O_1O_2O_3}\), then we
+get a case of Menelaus' Theorem. \[\frac{O_1X}{XO_2}\cdot\frac{O_2Y}{YO_3}
+\cdot\frac{O_3Z}{ZO_1} = \left(-\frac{r_1}{r_2}\right)\left(-\frac{r_2}
+{r_3}\right)\left(-\frac{r_3}{r_1}\right) = -1,\]
+where the length ratios are directed.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry></feed>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/folklore.xml</id><subtitle>Tag: folklore</subtitle><updated>2024-02-27T23:49:59Z</updated><link href="nodalynn.com/feeds/tags/folklore.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
+exactly one of them knew the other. Prove that there was someone in the
+gathering that each person either knew or knew someone else who did.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Call the person that was known to the most number of people \(A\). We claim that
+person \(A\) is the one with the desired properties.&lt;/p&gt;&lt;p&gt;Suppose the number of people who knew \(A\) was \(k\). If \(A\) did not know anyone
+in the gathering, then everyone must have known \(A\) so our work is done.
+Otherwise, \(A\) must have known someone else, say person \(B\). It then suffices
+to show that \(B\) knew someone that knew \(A\).&lt;/p&gt;&lt;p&gt;If \(B\) did not know anyone else who knew \(A\), then clearly, \(B\) must not have
+known the \(k\) people who knew \(A\). Thus, \(B\) must have been known to the \(k\)
+people who knew \(A\). And since \(A\) knew \(B\), in total, \(B\) must have been known
+by \(k+1\) people. This contradicts the maximality of the number of people who
+knew \(A\), so our assumption that \(B\) did not know anyone who knew \(A\)
+is false. \(B\) must have known someone who knew \(A\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;This is a prototypical example of an existence problem where we discover the
+construction through the extremal principle. We hypothesize that the desired
+object maximizes some function, and if said hypothesis is in fact true, the
+solution should come out via assuming falsity and arriving at some
+contradiction.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Folklore Combinatorics/3</title><id>https://nodalynn.com/folklore-combinatorics3.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics3.html" rel="alternate" /><summary type="html">&lt;h2&gt;Graph Connectedness Guaranteed&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;If a graph has \(n\) vertices, what is the minimum number of edges it must have to
+guarantee that it is connected?
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The answer is \(\tbinom{n-1}{2} + 1 = \frac{(n-1)(n-2)}{2} + 1\) edges. We first
+show that our answer indeed connects any given graph.&lt;/p&gt;&lt;p&gt;Consider a graph \(G\) that has at least \(\frac{(n-1)(n-2)}{2} + 1\) edges and
+assume FTSOC that there exists some \(k\)-vertex subgraph of \(G\) (\(k &amp;lt; n\)), say
+\(G_k\), that is disconnected. The degree of each vertex in \(G_k\) must be at most
+\(k-1\). Similarly, among the remaining \(n-k\) vertices, since none of them
+connect to vertices in \(G_k\), each vertex will have a degree at most \(n-k-1\).
+Now if the number of edges in \(G\) is maximized, by the handshake lemma, the
+total number of edges in \(G\) must be at most \[ \frac{k(k-1)}{2} + \frac{(n-k)
+    (n-k-1)} {2}.\] &lt;/p&gt;&lt;p&gt;Hence, if \(E\) is the total number of edges in \(G\), we must have
+\[\begin{align*}
+    &amp;amp;\quad \frac{k(k-1)}{2} + \frac{(n-k)(n-k-1)}{2} \geq E \geq \frac{(n-1)(n-2)}{2} + 1 \\
+    \implies&amp;amp;\quad\frac{k(k-1)}{2} + \frac{(n-k)(n-k-1)}{2} \geq \frac{(n-1)(n-2)}{2} + 1 \\
+    \iff&amp;amp;\quad\frac{n^2-(2k+1)n+2k^2}{2} \geq \frac{n^2-3n+4}{2} \\
+    \iff&amp;amp;\quad k^2 - (k-1)n - 2 \geq 0 \\
+    \iff&amp;amp;\quad k - 2 \geq (k-1)(n-k),
+\end{align*}\]
+which is a contradiction.&lt;/p&gt;&lt;p&gt;It now suffices to show that \(\frac{(n-1)(n-2)}{2} + 1\) is the minimum possible
+bound. If the bound is \(\frac{(n-1)(n-2)}{2} = \tbinom{n-1}{2}\), then there is a
+counterexample of \(G\) as the union of a \(K_{n-1}\) complete graph and one
+disconnected vertex. On the other hand, there does exist a graph with
+\(\tbinom{n-1}{2} + 1\) edges; \(G\) can be a \(K_{n-1}\) complete graph connected to
+a distinct vertex by one edge.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Monge's Theorem</title><id>https://nodalynn.com/monges-theorem.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/monges-theorem.html" rel="alternate" /><summary type="html">&lt;h2&gt;Fun with Menelaus' Thoerem&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Suppose we are given three non-congreuent circles in the plane. It is possible
+to draw the external tangents for each pair of circles so that they intersect at
+a point. Prove that these points are collinear.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let the three circles be \(\omega_1\), \(\omega_2\), and \(\omega_3\), and their
+centers be \(O_1\), \(O_2\), and \(O_3\) respectively. Furthermore, let \(X\) be the
+intersection of the tangents between \(\omega_1\), \(\omega_2\), and define \(Y\) and
+\(Z\) similarly.&lt;/p&gt;&lt;p&gt;WLOG, consider a single external tangent between, say, \(\omega_1\) and
+\(\omega_2\). If we let the point of tangency on \(\omega_1\) be \(M\) and the point
+of tangency on \(\omega_2\) be \(N\), then clearly, \(M\), \(N\), \(X\) are collinear.
+Moreover, \(\measuredangle O_1MX = 90^\circ = \measuredangle O_2NX\), and \(O_1\),
+\(O_2\), \(X\) are collinear. Thus, \(\triangle{O_1MX}\) is similar to
+\(\triangle{O_2NX}\) with \[ \left|\frac{O_1X}{O_2X}\right| = \left|\frac{O_1M}
+{O_2N}\right| = \frac{r_1}{r_2},\] where \(r_1\) and \(r_2\) are the radii of
+\(\omega_1\) and \(\omega_2\) respectively. Thus, it also follows that
+\(\left|\frac{O_2Y}{O_3Y}\right| =  \frac{r_2}{r_3} \), and \(\left|\frac{O_3Z}
+{O_1Z}\right| =  \frac{r_3}{r_1}\).&lt;/p&gt;&lt;p&gt;Finally, consider the points \(O_1\), \(O_2\), and \(O_3\). If the points are
+collinear, the theorem is obviously true; all the intersections lie on a line.
+On the other hand, if the points form a triangle \(\triangle{O_1O_2O_3}\), then we
+get a case of Menelaus' Theorem. \[\frac{O_1X}{XO_2}\cdot\frac{O_2Y}{YO_3}
+\cdot\frac{O_3Z}{ZO_1} = \left(-\frac{r_1}{r_2}\right)\left(-\frac{r_2}
+{r_3}\right)\left(-\frac{r_3}{r_1}\right) = -1,\]
+where the length ratios are directed.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Folklore Number Theory/2</title><id>https://nodalynn.com/folklore-number-theory2.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/folklore-number-theory2.html" rel="alternate" /><summary type="html">&lt;h2&gt;Relatively-Prime Reciprocals Sum to 1/2&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;For some positive integer \(n \geq 2\), suppose \(p\) and \(q\) are relatively prime
+positive integers such that \(p &amp;lt; q \leq n\) and \(p + q &amp;gt; n\). If \(\mathcal{R}
+_n\) is the set of all ordered pairs \((p, q)\), prove that \[\sum_{(p,q) \in
+\mathcal{R}_n} \frac{1}{pq} = \frac{1}{2}.\]
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given a set of positive integer pairs \(X = \{\left(a_1, b_1\right), \left(a_2,
+b_2\right), \dots, \left(a_n, b_n\right)\}\), define the function \(\sigma:X\to
+\mathbb{Q}\) as \[ \sigma(X) \coloneqq \sum_{(a,b) \in X}\frac{1}{ab}.\]
+Moreover, define the sets \(A_n \coloneqq \{(p,q)\in \mathcal{R}_n \mid p+q&amp;gt;n+1\}
+\), \(B_n \coloneqq \{(p,q) \in \mathcal{R}_n \mid p+q=n+1\}\), and \(N_n \coloneqq
+\{(p, n) \in \mathcal{R}_n\} \). We derive a few properties of these sets. &lt;/p&gt;&lt;p&gt;By construction, \(A_n\) and \(B_n\) are disjoint sets such that \(A_n \cup B_n =
+\mathcal{R}_n\) (ie.  \(A_n = \mathcal{R}_n \setminus B_n\)). Furthermore, since
+the sum of each pair in \(A_n\) is greater than \(n+1\) and follow the conditions
+satisfied by \(\mathcal{R}_n\), they each appear in the set \(\mathcal{R}_{n+1}\).
+In other words, \(A_n \subset \mathcal{R}_{n+1}\). &lt;/p&gt;&lt;p&gt;\(N_n\) is also the complement of \(A_{n-1}\) with respect to \(\mathcal{R}_{n+1} \).
+\(A_{n-1} \subset \mathcal{R}_n\) from before, and each element of \(A_{n-1}\) is a
+pair whose greatest element is at most \(n-1\). Likewise, \(N_n \subset \mathcal{R}
+_n\), but each element of \(N_n\) is a pair whose greatest element is exectly \(n\).
+These sets therefore disjointly make up \(\mathcal{R}_n\).&lt;/p&gt;&lt;p&gt;We have shown that \(A_n \sqcup B_n = \mathcal{R}_n = A_{n-1} \sqcup N_n\), so it
+is clear that \[\sigma(A_n) + \sigma(B_n) = \sigma(\mathcal{R}_n) =
+\sigma(A_{n-1}) + \sigma(N_n)\] for each \(n &amp;gt; 2\).&lt;/p&gt;&lt;p&gt;We then proceed to prove by induction that \(\sigma(\mathcal{R}_n) = \frac{1} {2}
+\) for each \(n &amp;gt; 2\) (\(n=2\) is trivially true). The base case is \(n=3\), for which
+\(\mathcal{R}_3 = \{(1,3), (2,3)\}\), and \(\sigma(\mathcal{R} _3) = \frac{1} {3}
++ \frac{1}{6} = \frac{1}{2}\). Now suppose that for some integer \(k &amp;gt; 2\),
+\(\sigma(\mathcal{R}_k)=\frac{1}{2}\). By the equalities derived above, we have
+\[\begin{align*}
+    \sigma(\mathcal{R}_{k+1}) &amp;amp;= \sigma(A_k) + \sigma(N_{k+1}) \\
+               &amp;amp;= \sigma(\mathcal{R}_k) - \sigma(B_k) + \sigma(N_{k+1}) \\
+               &amp;amp;= \frac{1}{2} + \sigma(N_{k+1}) - \sigma(B_k).
+\end{align*}\]
+Thus, it suffices to show that \(\sigma(N_{k+1}) = \sigma(B_k)\) for each \(k&amp;gt;2\).&lt;/p&gt;&lt;p&gt;We now prove a short lemma. For positive integers \(a\), \(b\), and \(m\) such that
+\(a+b=m\), \(a\perp m \iff a\perp b \iff b\perp m\). By symmetry, it suffices to
+prove that \(a\perp m\) if and only if \(a\perp b\). The Euclidean algorithm yields
+\(\gcd(m, a) = \gcd(a, m - a = b)\), so if one of them is \(1\) then so is the
+other.&lt;/p&gt;&lt;p&gt;Let us now compute \(\sigma(N_{k+1})\). We have 
+\[\begin{align*}
+\sigma(N_{k+1}) &amp;amp;= \sum_{\substack{0&amp;lt;p&amp;lt;k+1\\ p\perp k+1}} \frac{1}{p(k+1)} \\
+           &amp;amp;= \frac{1}{2}\cdot\sum_{\substack{0&amp;lt;p&amp;lt;k+1\\ p\perp k+1}}\left(\frac{1}{p(k+1)}+\frac{1}{(k+1-p)(k+1)}\right) \\
+           &amp;amp;= \frac{1}{2}\cdot\sum_{\substack{0&amp;lt;p&amp;lt;k+1\\ p\perp k+1}}\frac{1}{p(k+1-p)} \\
+           &amp;amp;= \sum_{\substack{0&amp;lt;p&amp;lt;q\leq k\\ p+q=k+1\\ p\perp q}}\frac{1}{pq} \\
+           &amp;amp;= \sum_{\substack{(p,q)\in \mathcal{R}_k\\ p+q=k+1}}\frac{1}{pq} = \sigma(B_k),
+\end{align*}\]
+where our lemma is used on the second and the fourth equalities.&lt;/p&gt;&lt;p&gt;We have shown that \(\sigma(N_{k+1})=\sigma(B_k)\) for each \(k&amp;gt;2\), completing the
+proof.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The main difficulty of this problem is to get the whole induction to go
+through.  We want to somehow link the \(n=k\) case to the \(n=k+1\) case, but
+simple computations of the sum do not yield anything fruitful. This motivates
+us to analyze the actual pairs instead. We see that some of the pairs appear
+multiple times across \(n\), so we question whether we have anything useful to
+say about them. One of the key realizations is to notice that if pair \((p, q)
+\in \mathcal{R}_k\) has the property \(p+q&amp;gt;k+1\), then that pair carries over to
+the next sum for \(n=k+1\).  It is then easy to realize that the rest of the
+pairs that make up \(\mathcal{R}_{k+1}\) have largest element \(k+1\). This
+motivates the three sets we defined in the solution.&lt;/p&gt;&lt;p&gt;Beyond this, the rest of the problem simplifies to showing that the sums from
+these sets are equal. The insight here is that numbers relatively prime to some
+integer \(k\) come in pairs that sum to \(k\). This is the lemma we proved in the
+solution.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>BAMO 1999/3</title><id>https://nodalynn.com/bamo-19993.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/bamo-19993.html" rel="alternate" /><summary type="html">&lt;h2&gt;Color Switcher&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;A lock has \(16\) keys arranged in a \(4 \times 4\) array, each key oriented either
+horizontally or vertically. In order to open it, all the keys must be vertically
+oriented. When a key is switched to another position, all the other keys in the
+same row and column automatically switch their positions too. Show
+that no matter what the starting positions are, it is always possible to open
+this lock. (Only one key can be switched at a time.)
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;It suffices to show that there exists a sequence of moves such that any of the
+keys can be switched individually without altering the rest of the
+configuration. &lt;/p&gt;&lt;p&gt;Select any key to individually switch and call this the \(\textit{main}\) key.
+Now consider all the keys that occupy the same row or the same column as this
+key. Together, there are \(7\) such keys including the main key. We claim that
+our sequence of moves consists of switching each of these keys once regardless
+of order.&lt;/p&gt;&lt;p&gt;To prove that this works, we count the number of times each key gets switched.
+There are three cases to consider: the main key, the \(6\) other keys to switch,
+and the rest of the keys left untouched.&lt;/p&gt;&lt;p&gt;For the main key, the position changes each time we switch one of the \(7\) keys.
+Since \(7\) is odd, by the end of the operation, it will switch to a different
+position.&lt;/p&gt;&lt;p&gt;Meanwhile, for the other \(6\) keys, a key either shares the same row or the same
+column as the main key. WLOG, if the key shares the same row with the main key,
+then when the \(7\) keys get switched, only the keys in the same row affect our
+key. Hence, any such key gets switched \(4\) times, returning them to their
+original positions.&lt;/p&gt;&lt;p&gt;Lastly, for the untouched keys, a key will share the same row with one of the
+\(6\) keys, and share the same column with another of the \(6\) keys. This means
+that untouched keys are switched a total of \(2\) times, so they too will switch
+back to their original positions.&lt;/p&gt;&lt;p&gt;We have shown that only the main key gets switched to a different position
+after the sequence of moves, so we are done.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Commentary&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The solution can easily be generalized for any even by even array. On the other
+hand, when the array has odd dimensions, there seem to be certain invariants
+preventing potential solutions. I haven't investigated the problem enough, so I
+can't say for sure.
+&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Here is a &lt;a href=&quot;/cs/software.html#color-switcher&quot;&gt;shameless plug&lt;/a&gt;, and a
+&lt;a href=&quot;https://okimath.com/cs00/color_switcher.html&quot;&gt;link to a working version&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Folklore Combinatorics/2</title><id>https://nodalynn.com/folklore-combinatorics2.html</id><author><name></name></author><updated>2024-02-20T23:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics2.html" rel="alternate" /><summary type="html">&lt;h2&gt;Number of Non-Adjacent Subsets&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;How many subsets of \(\{1, 2, \dots, 100\}\) are there that do not contain
+adjacent numbers?
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(a_n\) be the number of subsets of \(\{1, 2, \dots, n\}\) that do not contain
+adjacent numbers. We claim that \(a_n = F_{n+2}\), where \(F_n\) denotes the \(n\)-th
+Fibonacci number.&lt;/p&gt;&lt;p&gt;First, let us compute the first two values of \((a_n)\). When \(n=1\), we have the
+subsets \(\{\emptyset, \{1\}\}\), so \(a_1=2\) and when \(n=2\), we have the subsets
+\(\{\emptyset, \{1\}, \{2\}\}\), so \(a_2=3\). It now suffices to prove that \(a_n = a_{n-1} +
+a_{n-2}\).&lt;/p&gt;&lt;p&gt;Consider the numbers \(1\), \(2\), \(\dots\), \(n\). We do casework on whether to
+include or exclude \(n\) in our subset. &lt;/p&gt;&lt;p&gt;Suppose we include \(n\). This means that we cannot include \(n - 1\). The
+exclusion of \(n-1\) does not affect the inclusion of the rest of the numbers
+between \(1\) and \(n-2\), so there will be \(a_{n-2}\) subsets that can be formed
+with these numbers.&lt;/p&gt;&lt;p&gt;On the other hand, if we exclude \(n\), then this does not affect the inclusion of
+the rest of the numbers from \(1\) to \(n-1\). Therefore, there will be \(a_{n-1}\)
+subsets that can be formed.&lt;/p&gt;&lt;p&gt;We have therefore shown that \(a_n = a_{n-1} + a_{n-2}\), so \(a_{n} = F_{n+2}\).
+Our particular problem asks for the case when \(n = 100\), so \[a_{100} = F_{102}
+= \boxed{927,372,692,193,078,999,176}.\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Folklore Combinatorics/1</title><id>https://nodalynn.com/folklore-combinatorics1.html</id><author><name></name></author><updated>2024-02-20T23:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics1.html" rel="alternate" /><summary type="html">&lt;h2&gt;Counter on the Edges of a Cube&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;On a cube, seven verticies are labeled with \(0\)s and the remaining vertex is
+labeled with a \(1\). An operation consists of choosing an edge of the cube and
+incrementing the numbers at the endpoints by \(1\). Can all the numbers be (i)
+equal, or (ii) divisible by 3 after a finite number of these operations?
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;(i) is impossible for parity reasons. Updating an edge increases the total sum
+of the vertices by \(2\), the initial configuration starts with an odd sum, and
+the the sum of the vertices in the desired configuration is even (\(8k\) where
+\(k\) is the quantity on each vertex).&lt;/p&gt;&lt;p&gt;(ii) is more interesting. Suppose we two-color the vertices of the cube, that
+is, color the vertices with two colors, say black and white, in such a way that
+adjacent vertices have different colors. Let \(B\) be the sum of the black
+vertices and \(W\) be the sum of the white vertices. &lt;/p&gt;&lt;p&gt;WLOG, assume that the \(1\) in the initial configuration is on a black vertex. We
+start with \(B=1\) and \(W=0\). An update to an edge increases each of \(B\) and \(W\)
+by \(1,\) so their difference is invariant (ie. \(B - W = 1\)). The desired end
+state where each of the \(8\) numbers is divisible by \(3\) requires \(B - W\) to be
+divisible by \(3\) so the desired goal is impossible.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Folklore Number Theory/1</title><id>https://nodalynn.com/folklore-number-theory1.html</id><author><name></name></author><updated>2024-02-20T23:32:00Z</updated><link href="https://nodalynn.com/folklore-number-theory1.html" rel="alternate" /><summary type="html">&lt;h2&gt;Divisibility of 2n Numbers&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Among \(n + 1\) positive integers \(\leq 2n\), prove that there are two which are
+relatively prime and two where one divides the other.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We first show that there exist two relatively prime numbers.&lt;/p&gt;&lt;p&gt;For each positive integer \(k \leq 2n\), \(\gcd(k, k+1) = 1\). Pairing each odd \(k\)
+with \(k+1\), we get \(n\) pairs among which \(n + 1\) numbers are chosen. By the
+pigeonhole principle, there must exist a pair where both numbers are chosen.&lt;/p&gt;&lt;p&gt;Next, we show that there exist two numbers where one divides the other.&lt;/p&gt;&lt;p&gt;Define an \(\textit{odd root}\) of a positive integer \(k\) as the odd positive
+integer \(r\) such that \(k = 2^t\cdot r\) for some non-negative integer \(t\). We
+partition the positive integers from \(1\) to \(2n\) based on their odd root. Since
+there are \(n\) odd positive integers, clearly there will be \(n\) partitions. &lt;/p&gt;&lt;p&gt;We now claim that any two numbers in the same partition have the property that
+one divides the other. Suppose WLOG that positive integers \(a\) and \(b\) have the
+same odd root \(r_0\) and \(a &amp;gt; b\). We can write \(a\) as \(2^{a_0}\cdot r_0\) and \(b\)
+as \(2^{b_0} \cdot r_0\) for some non-negative integers \(a_0\) and \(b_0\). Since \(a
+&amp;gt; b\), clearly, \(a_0 &amp;gt; b_0\), so \[a = 2^{a_0}\cdot r_0 = 2^{a_0 - b_0} \cdot
+2^{b_0} \cdot r_0 = 2^{a_0 - b_0}\cdot b.\]&lt;/p&gt;&lt;p&gt;Among the \(n\) partitions, \(n+1\) numbers are chosen, so by the pigeonhole
+principle, there must exist a partition in which two numbers are chosen.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Folklore Algebra/1</title><id>https://nodalynn.com/folklore-algebra1.html</id><author><name></name></author><updated>2024-02-20T23:32:00Z</updated><link href="https://nodalynn.com/folklore-algebra1.html" rel="alternate" /><summary type="html">&lt;h2&gt;The Mean-Map of a Sequence&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let the \(\textit{mean-map}\) of a finite sequence of real numbers be a new
+sequence where each term in the original sequence is replaced by the arithmetic
+mean of the term and the next term after it (where the last term is paired 
+with the first term). If we start with a sequence of integers where no two
+terms are equal, then prove that iteratively taking the mean-map of the
+seqeunce will eventually produce non-integral terms.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We will first prove the following assertion.&lt;/p&gt;&lt;p&gt;If \(q_1\), \(q_2\), \(\dots\), \(q_n\) \((n &amp;gt; 2)\) is a seqeunce of pairwise distinct
+integers, then no matter how many times the mean-map is taken, a seqeuence will
+never have all equal terms.&lt;/p&gt;&lt;p&gt;Assume FTSOC that at some point all the terms become equal. Suppose the
+sequence \(r_1\), \(r_2\), \(\dots\), \(r_n\) of integers are not all equal and the map
+\[ \left(r_1, r_2, \dots, r_n\right) \mapsto \left(\frac{r_1+r_2} {2},
+        \frac{r_2+r_3} {2}, \dots, \frac{r_n+r_1} {2}\right) \] yields
+        \[\frac{r_1+r_2}{2} = \frac{r_2+r_3}{2} = \dots = \frac{r_n+r_1}{2}
+        \iff r_1+r_2 = r_2+r_3 = \dots = r_n+r_1.\] &lt;/p&gt;&lt;p&gt;If \(n\) is odd, then we derive that \(r_1 = r_2 = \dots = r_n\), contradicting the
+fact that they are not all equal. It suffices to then consider the case when
+\(n\) is even.&lt;/p&gt;&lt;p&gt;If \(n\) is even, the above equality yields \(r_1 = r_3 = \dots = r_{n-1}\) and
+\(r_2 = r_4 = \dots = r_n\). Suppose that \(x = r_1\) and \(y = r_2\). If \(x=y\), then
+we get a contradiction as in the odd case, so consider \(x\neq y\). It suffices
+to show that there cannot exist a sequence of integers \(s_1\), \(s_2\), \(\dots\),
+\(s_n\) such that \[ \left(s_1, s_2, \dots, s_n\right) \mapsto \left(x, y, \dots,
+x, y\right).\] If such a sequence exists, then \(s_1 + s_2 = s_3 + s_4 = \dots =
+s_{n-1} + s_n = 2x\) and \(s_2 + s_3 = s_4 + s_5 = \dots = s_n + s_1 = 2y\). From
+which it follows that \(\sum_{i=1}^n s_i = nx\) and \(\sum_{i=1}^n s_i = ny\)
+respectively. However, since \(x \neq y\), this is clearly a contradiction.&lt;/p&gt;&lt;p&gt;Lastly, we show that the sum of the pairwise distances between terms always
+decreases. Let \(D_k\) be the sum after taking \(k\) mean-maps, we have
+\[\begin{align*}
+D_k &amp;amp;= \sum_{1\leq i\leq j\leq n} \left| q_i - q_j \right|\\
+      &amp;amp;= 2\sum_{1\leq i\leq j\leq n} \frac{\left| q_i - q_j \right|}{2} \\
+      &amp;amp;= \sum_{1\leq i\leq j\leq n} \frac{\left| q_i - q_j \right| + \left| q_{i+1} - q_{j+1} \right|}{2} \\
+      &amp;amp;&amp;gt; \sum_{1\leq i\leq j\leq n} \left|\frac{q_i + q_{i+1}}{2} - \frac{q_j + q_{j+1}}{2}\right| \\
+      &amp;amp;= D_{k+1},
+\end{align*}\]
+where indicies are taken cyclically modulo \(n\).&lt;/p&gt;&lt;p&gt;Since \(D_k \geq 0\) always decreases after taking a mean-map and the terms never
+equate to one another (\(D_k \neq 0\) for each \(k\)), eventually \(D_k\) will stop
+decreasing by integers, at which point it will decrease by a non-integer. The
+distance between terms will then be non-integral, so some term must become
+non-integral.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;There are two key insights to the solution. The first insight is to come up
+with the monovariant \(D_k\): the sum of the pairwise distances between terms.
+Enough experimentation should reveal that the terms seem to &amp;quot;converge&amp;quot;
+together after enough mean-maps. This then motivates the next key insight which
+is to question whether all the terms become equal. This is important because
+the equality case is a fixed point under a mean-map. To guarantee that we
+always get non-integral terms, we must eliminate the potentially unwieldly
+cases where the configurations somehow jumps to this fixed point. Once these
+two insights are found however, the rest are minor details.
+&lt;/p&gt;&lt;/div&gt;</summary></entry></feed>

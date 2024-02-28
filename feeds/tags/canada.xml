@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/canada.xml</id><subtitle>Tag: canada</subtitle><updated>2024-02-27T23:49:59Z</updated><link href="nodalynn.com/feeds/tags/canada.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Canada 1991/3</title><id>https://nodalynn.com/canada-19913.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/canada-19913.html" rel="alternate" /><summary type="html">&lt;h2&gt;Midpoints Lie on a Circle&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(C\) be a circle and \(P\) a given point in the plane. Each line
+through \(P\) which intersects \(C\) determines a chord of \(C\). Show that the
+midpoints of these chords lie on a circle.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(O\) be the center of circle \(C\). The diameter of \(C\) passing through \(P\)
+passes through the midpoint \(O\), so the locus contains \(O\). Now consider the
+midpoint \(Q\) (\(\neq O, P\)) of some chord \(q\) passing through \(P\). Since \(Q\)
+bisects chord \(q\), note that \(OQ\) is perpendicular to \(q\). In other words,
+\(\angle OQP = 90^\circ\). As such, \(Q\) lies on the circle whose diameter is
+\(OP\). This is true regardless of the choice of \(q,\) so any midpoint \(Q\) will
+lie on the circle with diameter \(OP\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2015/2</title><id>https://nodalynn.com/canada-20152.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20152.html" rel="alternate" /><summary type="html">&lt;h2&gt;An Inequality on the Product of Altitude Components&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(ABC\) be an acute-angled triangle with altitudes \(AD\), \(BE\), and \(CF\). Let
+\(H\) be the orthocentre, that is the point where the altitudes meet. Prove that
+\[\frac{AB\cdot AC + BC\cdot BA + CA\cdot CB}{AH\cdot AD + BH\cdot BE + CH\cdot
+CF} \leq 2.\]
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;p&gt;I should come back to clean up this solution because it's embarrassingly
+long... But nonetheless, here is &lt;em&gt;a&lt;/em&gt; solution:&lt;/p&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(a\), \(b\), \(c\) denote the lengths of the sides \(BC\), \(AC\), and \(AB\)
+respectively. We begin with an obvious statement of AM-GM:
+\[ab + bc + ca \leq a^2 + b^2 + c^2\] is equivalent to
+\[\begin{align*}
+    \frac{1}{a} + \frac{1}{b} + \frac{1}{c} 
+    &amp;amp;\leq \frac{a^2 + b^2 + c^2}{abc} \\
+    &amp;amp;= \frac{\left(c^2 + b^2 - a^2\right) + \left(a^2 + c^2 - b^2\right) + \left(a^2 + b^2 - c^2\right)}{abc} \\
+    &amp;amp;= 2\left(\frac{\cos A}{a} + \frac{\cos B}{b} + \frac{\cos C}{c}\right).
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Now suppose \(x = c\cdot AF\), \(y = a\cdot BD\), and \(z = b\cdot CE\). We claim that
+\[\begin{align*} 
+    x\cos B\cos C &amp;amp;= \frac{xyz}{a^2bc},\\ 
+    y\cos C\cos A &amp;amp;= \frac{xyz}{ab^2c}, \\
+    z\cos A\cos B &amp;amp;= \frac{xyz}{abc^2}.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;By the symmetry of the configuration, WLOG it suffices to show that \(x\cos B\cos
+C = \frac{xyz}{a^2bc}\). We have
+\[\begin{align*}
+    x\cos B\cos C 
+    &amp;amp;= c\cdot AF\cdot\cos B\cos C \\
+    &amp;amp;= (c\cos B)\cdot AF\cdot\cos C \\
+    &amp;amp;= BD\cdot AF\cdot \frac{CE}{a} \\
+    &amp;amp;= \frac{xyz}{a^2bc}.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Multiplying both sides of our derived inequality by \(\frac{xyz}{abc}\), we get 
+\[\begin{align*}
+    &amp;amp;\quad \sum_{cyc}\frac{xyz}{a^2bc} \leq 2\sum_{cyc}\left(\frac{xyz}{a^2bc}\cos A\right)\\
+    \iff&amp;amp;\quad \sum_{cyc}x\cos B\cos C \leq 2(x+y+z)\cos A\cos B\cos C\\
+    \iff&amp;amp;\quad \frac{x}{\cos A} + \frac{y}{\cos B} + \frac{z}{\cos C} \leq 2(x+y+z),
+\end{align*}\]&lt;/p&gt;&lt;p&gt;where the cyclic sum is taken across the triplet \((a\), \(b\), \(c)\), the triplet
+\((x\), \(y\), \(z)\), and the triplet \((A\), \(B\), \(C)\). Also note that \(0 &amp;lt; \cos A\),
+\(\cos B\), \(\cos C &amp;lt; 1\) since \(ABC\) is acute. Now observe that \[ \frac{x}
+{\cos A} = \frac{c\cdot AF}{\cos A} = \frac{c\cdot AF\cdot b}{AF} = bc,\] as
+well as \(\frac{y}{\cos B}=ab\) and \(\frac{z}{\cos C} = ca\). Furthermore, it is
+well known that the points \(F\), \(B\), \(D\), \(H\), the points \(H\), \(D\), \(C\), \(E\),
+and the points \(E\), \(A\), \(F\), \(H\) are respectively concyclic, so by the power
+of a point, &lt;/p&gt;&lt;p&gt;\[\begin{align*}
+    x &amp;amp;= c\cdot AF = AH\cdot AD, \\
+    y &amp;amp;= a\cdot BD = BH\cdot BE, \\
+    z &amp;amp;= b\cdot CE = CH\cdot CF.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Substituting for the inequality above gives us \[ \frac{AB\cdot AC + BC\cdot BA
++ CA\cdot CB}{AH\cdot AD + BH\cdot BE + CH\cdot CF} \leq 2.\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The motivation for the solution is to think about how to interpret each product
+that appears in the expression on the left-hand side. Initially, the products
+\(AB\cdot AC\), \(BC\cdot BA\), and \(CA\cdot CB\) motivate us to think about area,
+but this line of thought is shot down by the fact that \(\sin\) doesn't give us
+the lengths we care about. The lengths we care about are the ones that appear
+in the problem statement as well as the ones that can be derived from power of
+a point.&lt;/p&gt;&lt;p&gt;With this train of thought however, one might reach the critical insight, which
+is that \[AB\cdot AC\cdot\cos A = AB\cdot AC\cdot \frac{AE}{AB} = AE\cdot AC =
+AH\cdot AD,\] where the same relation holds for the other angles. A natural
+train of thought is: if \(\sin\) didn't work, why not \(\cos\)? Or one can realize
+that \(AE\) is the projection of \(AB\) onto side \(AC\). Or instead of thinking
+about areas, think about dot products. Any one of these should lead to this key
+insight.&lt;/p&gt;&lt;p&gt;From here, the problem becomes substantially easier, so the rest is mostly
+algebraic and geometric grunt work.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2011/2</title><id>https://nodalynn.com/canada-20112.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20112.html" rel="alternate" /><summary type="html">&lt;h2&gt;Parallelogram in Cyclic Quadrilateral&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(ABCD\) be a cyclic quadrlateral whose opposite sides are not parallel, \(X\)
+the intersection of \(AB\) and \(CD\), and \(Y\) the intersection of \(AD\) and \(BC\).
+Let the angle bisector of \(\angle AXD\) intersect \(AD\), \(BC\), at \(E\), \(F\)
+respectively and let the angle bisector of \(\angle AYB\) intersect \(AB\), \(CD\) at
+\(G\), \(H\) respectively. Prove that \(EFGH\) is a parallelogram.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We show that \(EF\) bisects \(HG\) and vice versa. To begin, let \(Z = XF\cap YH\). We
+then compute the value of \(\angle XZY\):
+\[\begin{align*}
+    \angle XZY &amp;amp;= \angle EZY \\
+               &amp;amp;= 180^\circ - (\angle EYZ + \angle ZEY) \\
+               &amp;amp;= 180^\circ - (\angle EYZ + \angle EXA + \angle XAE) \\
+               &amp;amp;= 180^\circ - (\angle DYH + \angle FXB + \angle DCB) \\
+               &amp;amp;= 180^\circ - \left[\frac{1}{2}\left(\widehat{CD} - \widehat{AB}\right) + \left(\widehat{BC} - \widehat{DA}\right) + \angle DCB\right] \\
+               &amp;amp;= 180^\circ - \left(\frac{1}{2}\widehat{BCD} - \frac{1}{2}\widehat{DAB} + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - \left(\frac{1}{2}\angle BAD - \frac{1}{2}\angle DCB + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - \frac{1}{2}\left(\angle BAD + \angle DCB \right) \\
+               &amp;amp;= 180^\circ - 90^\circ = 90^\circ.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Thus we deduce that \(XZ\) is perpendicular to \(YZ\). Now consider \(\triangle{HXG}\)
+and \(\triangle{EYF}\). Segments \(\overline{XZ}\) and \(\overline{YZ}\) are each both
+an angle bisector and an altitude of \(\triangle{HXG}\) and \(\triangle{EYF}\)
+respectively. It follows that the triangles are both isosceles, and in
+particular, \(XZ\) bisects \(\overline{HG}\) and \(YZ\) bisects \(\overline{EF}\). \(E\)
+and \(F\) are on \(XZ\), and \(G\) and \(H\) are on \(YZ\) respectively, so the result has
+been proven.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2015/1</title><id>https://nodalynn.com/canada-20151.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20151.html" rel="alternate" /><summary type="html">&lt;h2&gt;Functional Inequality in N&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(\mathbb{N} = \{1, 2, 3, \dots\}\) be the set of positive integers.
+Find all functions \(f\), defined on \(\mathbb{N}\) and taking values in \(\mathbb{N}
+\), such that \((n-1)^2 &amp;lt; f(n)f(f(n)) &amp;lt; n^2 + n\) for every positive integer \(n\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We claim that the only solution to \(f\) is \(f(n)=n\). Clearly, the inequality \[\
+    (n-1)^2 &amp;lt; f(n)f(f(n)) = nf(n) = n^2 &amp;lt; n^2 + n
+\] holds. We then show that \(f(n) = n\) for each \(n \in \mathbb{N}\).&lt;/p&gt;&lt;p&gt;To begin, we prove by induction that \(f(n)\geq n\) for each \(n \in \mathbb{N}\).
+The base case is \(n = 1\), where in which \(0 &amp;lt; f(1)f(f(1)) &amp;lt; 2\). This implies
+that \(f(1) = 1\). Now suppose that \(f(k)\geq k\) for each \(1 \leq k \leq n - 1\),
+and assume FTSOC that \(f(n) &amp;lt; n\). Since \(f(n)\) is in \(\mathbb{N}\), we know that 
+\[\begin{align*}
+    &amp;amp;\quad f(n) &amp;lt; n \\
+    \iff&amp;amp;\quad f(n) \leq n - 1 \\
+    \implies&amp;amp;\quad f(n)^2 \leq (n-1)^2 &amp;lt; f(n)f(f(n)) \\
+    \implies&amp;amp;\quad f(n) &amp;lt; f(f(n)).
+\end{align*}\]&lt;/p&gt;&lt;p&gt;However note that because \(1 \leq f(n) \leq n-1\), by the hypothesis, \(f(f(n))
+\geq f(n)\). This is a contradiction, so \(f(n) \geq n\) completes the induction.&lt;/p&gt;&lt;p&gt;We then show that \(f(n) \not&amp;gt; n\) for each \(n \in \mathbb{N}\). Suppose that \(f(n) &amp;gt;
+n\). We then have
+\[\begin{align*}
+    &amp;amp;\quad f(n) &amp;gt; n \\
+    \iff&amp;amp;\quad f(n) \geq n + 1 \\
+    \implies&amp;amp;\quad f(n)^2 \geq (n+1)^2 &amp;gt; n^2+n &amp;gt; f(n)f(f(n)) \\
+    \implies&amp;amp;\quad f(n) &amp;gt; f(f(n)).
+\end{align*}\]&lt;/p&gt;&lt;p&gt;But clearly, by the fact that \(f(n) \geq n\) for each \(n\), it must be that
+\(f(f(n)) \geq f(n)\). This is a contradiction, so \(f(n) \not&amp;gt; n\).&lt;/p&gt;&lt;p&gt;In conclusion, we have shown that \(f(n) = n\) for each \(n\), so the only function
+\(f:\mathbb{N} \rightarrow \mathbb{N}\) must be \(f(n)=n\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;This is a typical garden-variety functional \(\sout{\text{equation}}\) inequality.&lt;/p&gt;&lt;p&gt;Observing that \(f\) is defined in \(\mathbb{N}\), we are motivated to test small
+values of \(n\). At first, the experimentation will make the problem smell like
+number theory, but after a while, we observe a recursive structure in the
+bounds. From here, we guess that the answer is just \(n\), and the usage of
+strong induction is highly motivated. &lt;/p&gt;&lt;p&gt;The only point of caution is to not get \(\textit{for each}\) mixed up with
+\(\textit{for some}\).  This is the infamous point-wise trap. When we say that
+\(f(n) \geq n\), we must specify whether this is true for some particular value
+of \(n\), or for each \(n \in \mathbb{N}\). The distinction seems subtle, but the
+consequences are dire.  For example, if \(f(n) \geq n\) is for true for each \(n\),
+then we can safely conclude that \(f(f(n)) \geq f(n)\), whereas if the argument
+is only true for some \(n\), we cannot make such conclusions.&lt;/p&gt;&lt;p&gt;In fact, there are lines of logic that are even more seemingly subtle than what
+is described above. The famous one is the distinction between \(\textit{for each}
+\) and \(\textit{for all}\). Intuitively, they seem interchangeable (\(\forall\)),
+but they can mean completely different things depending on the context. In
+these cases, leaning towards for each is a good bet.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2014/1</title><id>https://nodalynn.com/canada-20141.html</id><author><name></name></author><updated>2024-02-20T01:32:00Z</updated><link href="https://nodalynn.com/canada-20141.html" rel="alternate" /><summary type="html">&lt;h2&gt;Lower Bound on a Finite Fractional Sum&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(a_1, a_2, \dots, a_n\) be positive real numbers whose product is \(1\). Show
+that the sum \[\sum_{i=1}^n \frac{a_i}{\prod_{j=1}^i (1+a_j)}\] is greater than
+or equal to \(\frac{2^n - 1}{2^n}\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Define \[P_n \coloneqq \prod_{i=1} ^n(1+a_i) \quad\mathrm{and}\quad S_n
+\coloneqq \sum_{i=1}^n \left[a_i\prod_{j=i+1}^n(a_j + 1)\right].\]&lt;/p&gt;&lt;p&gt;We first show that \(S_n = P_n - 1\) by induction. The base case is
+\[\begin{align*}
+    S_2 &amp;amp;= a_1(1 + a_2) + a_2 \\
+        &amp;amp;= a_1 + a_1a_2 + a_2 \\
+        &amp;amp;= (1 + a_1)(1 + a_2) - 1 \\
+        &amp;amp;= P_2 - 1.
+\end{align*}\]
+Now suppose that the claim is true for \(n=k\).
+\[\begin{align*}
+    S_{k+1} &amp;amp;= (1 + a_{k+1})(P_k - 1) + a_{k+1} \\
+          &amp;amp;= (1 + a_{k+1})P_k - 1 - a_{k+1} + a_{k+1} \\
+          &amp;amp;= P_{k+1} - 1,
+\end{align*}\]
+completes the induction.&lt;/p&gt;&lt;p&gt;The expression in the problem statement can be rewritten as \(\frac{S_n}{P_n}\).
+Since \(a_1a_2\dots a_n = 1\), by the AM-GM inequality, \[ P_n = \prod_{i=1}
+^n(1+a_i) \geq 2^n\sqrt{a_1a_2\dots a_n} = 2^n.\] Therefore,
+\[\begin{align*}
+    &amp;amp;\quad\frac{1}{2^n} \geq \frac{1}{P_n} \\
+    \iff&amp;amp;\quad 1 - \frac{1}{P_n} \geq 1 - \frac{1}{2^n} \\
+    \iff&amp;amp;\quad \frac{P_n - 1}{P_n} \geq \frac{2^n - 1}{2^n} \\
+    \iff&amp;amp;\quad \frac{S_n}{P_n} \geq \frac{2^n - 1}{2^n}.
+\end{align*}\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2012/2</title><id>https://nodalynn.com/canada-20122.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/canada-20122.html" rel="alternate" /><summary type="html">&lt;h2&gt;LCM of Common Numbers&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;For any positive integers \(n\) and \(k\), let \(L(n,k)\) be the least common multiple
+of the \(k\) consecutive integers \(n\), \(n+1\), \(\dots\), \(n+k-1\). Show that for any
+integer \(b\), there exist integers \(n\) and \(k\) such that \(L(n, k) &amp;gt; bL(n + 1,k)\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;\(\gdef\lcm{\operatorname{lcm}}\)&lt;/p&gt;&lt;p&gt;Given any positive integer \(b\), let \(p&amp;gt;b\) be an odd prime number. We claim that
+\(n=p^2\), \(k=2p\) satisfies the condition.&lt;/p&gt;&lt;p&gt;Let \(C\) be the least common multiple of all the integers \(p^2+t\) where \(t\)
+ranges from 1 and \(2p-1\) inclusive. Since \(p^2\nmid p^2+t\) for each \(t\), we
+have \[L(n,k) = L(p^2, 2p) = \lcm(p^2, C) = pC.\] Furthermore, \[L(n+1, k) =
+L(p^2+1, 2p) = \lcm(p^2+2p, C) = C.\] The last line follows from the fact that
+\(p^2+2p=p(p+2)\), where both \(p\) and \(p+2\) are within the range of \(t\). In other
+words, there must exist multiples of \(p\) and \(p+2\) among the \(2p-1\) consecutive
+integers that produce \(C\).&lt;/p&gt;&lt;p&gt;As such, we conclude that \[L(n,k) = pC = pL(n+1,k) &amp;gt; bL(n+1, k).\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The motivation for the solution is to notice that \(L(n,k)\) and \(L(n + 1, k)\)
+doesn't change &amp;quot;by much&amp;quot;. This is in the sense that the least common multiples
+that these expressions are evaluating basically the same thing except the first
+or last term in a sequence of consecutive integers. This motivates us to
+invent \(C\), the least common multiple of the &amp;quot;common&amp;quot; numbers between each
+sequence.&lt;/p&gt;&lt;p&gt;The rest of the solution stems from trying to control the behavior of \(C\) to not
+take too many or too few factors given arbitrary \(n\) and \(k\). This is a
+construction problem, so once an example is found, we're done.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2014/3</title><id>https://nodalynn.com/canada-20143.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/canada-20143.html" rel="alternate" /><summary type="html">&lt;h2&gt;Good p-Tuples&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(p\) be a fixed odd prime. A \(\textit{p}\)-tuple \(\left(a_1, a_2, a_3, \dots,
+a_p\right) \) of integers is said to be \(\textit{good}\) if (i) \(0\leq a_i \leq p-1\) for
+all \(i\), and (ii) \(a_1+a_2+a_3+\dots+a_p\) is not divisible by \(p\), and (iii)
+\(a_1a_2 + a_2a_3 + a_3a_4 + \dots + a_pa_1\) is divisible by \(p\). Determine the
+number of good \(\textit{p}\)-tuples.
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The answer is \(p^{p-2}\left(p-1\right)\).&lt;/p&gt;&lt;p&gt;Call a \(\textit{p}\)-tuple \(\textit{close}\) if it satisfies at least the first
+two conditions but not necessarily the third. Furthermore, define a
+\(\textit{cyclic shift}\) of a \(\textit{p}\)-tuple \(\left(a_1, a_2, a_3, \dots,
+a_p\right)\) as the tuple obtained from adding a constant \(k \left(0 \leq k \leq
+p - 1\right)\) to each element and taking the values modulo \(p\).&lt;/p&gt;&lt;p&gt;In particular, for any given close \(\textit{p}\)-tuple, there exists \(p\) cyclic
+shifts. We then claim that exactly one of these cyclic shifts is good. If we
+let \(A_0 = \left(a_1, a_2, a_3, \dots, a_p\right)\) and \(A_k = \left(a_1 + k,
+    a_2 + k, a_3 + k, \dots, a_p + k\right)\), then note that \[ \sum_{i=1}
+    ^p\left(a_i + k\right) = pk + \sum_{i=1}^p a_i \equiv \sum_{i=1}^p a_i
+\not\equiv 0 \pmod{p}, \] and
+\[\begin{align*} \sum_{i=1}^p\left(a_i + k\right)\left(a_{i+1}+k\right) 
+    &amp;amp;=\sum_{i=1}^p\left(a_ia_{i+1} + ka_i + ka_{i+1} + k^2\right) \\ 
+    &amp;amp;= pk^2 + 2k\sum_{i=1}^p a_i + \sum_{i=1}^p a_ia_{i+1}  \\
+    &amp;amp;\equiv 2k\sum_{i=1}^p a_i + \sum_{i=1}^p a_ia_{i+1}, 
+\end{align*}\] 
+where indices are taken cyclically in the latter statement. Since \(p\nmid
+\sum_{i=1}^p a_i\) and \(p\) is an odd prime, there must exist a unique value of
+\(k\) such that \[2k\sum_{i=1}^p a_i + \sum_{i=1}^p a_ia_{i+1} \equiv 0 \pmod{p}.\]
+This proves the claim.&lt;/p&gt;&lt;p&gt;Hence, the total number of good \(\textit{p}\)-tuples is \(\frac{1}{p}\)-th of the
+number of close \(\textit{p}\)-tuples. Constructive counting gives us a count of
+\(p^{p-1} \left(p-1\right)\) close \(\textit{p}\)-tuples, so the number of good
+\(p\)-tuples is \(p^{p-2} \left(p-1\right)\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The motivation for the solution is to try to reduce the complexity of the
+solution by analyzing a small subset of the problem. Clearly, the third
+condition is the hardest to deal with, so we try to only focus on the first two
+conditions, leading to the idea of a &amp;quot;close&amp;quot; \(\textit{p}\)-tuple.&lt;/p&gt;&lt;p&gt;From there, experimentation should lead to the key observation that only one
+cyclic shift for any close \(\textit{p}\)-tuple satisfies the third condition.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Canada 2014/2</title><id>https://nodalynn.com/canada-20142.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/canada-20142.html" rel="alternate" /><summary type="html">&lt;h2&gt;Red-Dominated Rows and Blue-Dominated Columns&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(m\) and \(n\) be odd positive integers. Each square of an \(m\) by \(n\) board is
+coloured red or blue. A row is said to be red-dominated if there are more red
+squares than blue squares in the row. A column is said to be blue-dominated if
+there are more blue squares than red squares in the column. Determine the
+maximum possible value of the number of red-dominated rows plus the number of
+blue-dominated columns. Express your answer in terms of \(m\) and \(n\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We solve a generalization of the problem for all positive integers \(m\) and \(n\).&lt;/p&gt;&lt;p&gt;Let \(r\) be the number of red-dominated rows, \(b\) be the number of blue-dominated
+columns, and \(M\) be the maximum possible value of \(r+b\). WLOG, if \(m\) is the
+width of the board, and \(m\geq n\), we claim that \[
+M = m + \left\lfloor\frac{m\cdot\left\lfloor\frac{n - 1}{2}\right\rfloor}{\left\lfloor\frac{m}{2}\right\rfloor + 1}\right\rfloor,\]
+where \(\left\lfloor x\right\rfloor\) denotes the greatest positive integer less than or
+equal to \(x\). We do not have to worry about cases when \(m&amp;lt;n\), since by the
+symmetry fo the board, we can get an \(m\times n\) board from an \(n\times m\) board
+by rotating the board \(90^\circ\) and swapping the colors of all the squares.&lt;/p&gt;&lt;p&gt;We begin by showing that \(r + b \leq M\). Suppose FTSOC that \(r+b&amp;gt;M\). Let
+\(r+b=M+t\), where \(t\) is some positive integer. Note that since \(r\leq n\) and
+\(M+t-r=b\leq m\), we have \[ M+t-m \leq r \leq n.\] Now consider a coloring with
+\(r\) red-dominated rows and \(b=M+t-m\) blue-dominated columns. Since there are
+\(m\) squares in a row, at least \(r\cdot\left(\left\lfloor\frac{m}{2}
+        \right\rfloor + 1\right)\) squares must be red. Similarly, at least
+        \(b\cdot\left(\left\lfloor\frac{n} {2}\right\rfloor + 1\right)\) must be
+        blue. However, notice that&lt;/p&gt;&lt;p&gt;\[\begin{align*}
+    &amp;amp;\quad r\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor + 1\right) + b\cdot\left(\left\lfloor\frac{n}{2}\right\rfloor + 1\right) \\
+    =&amp;amp;\quad r\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right) + \left(r + b\right)\left(\left\lfloor\frac{n}{2}\right\rfloor + 1\right)\\
+    =&amp;amp;\quad r\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right) + \left(M + t\right)\left(\left\lfloor\frac{n}{2}\right\rfloor + 1\right)\\
+    \geq&amp;amp;\quad\left(M+t-m\right)\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right) + \left(M + t\right)\left(\left\lfloor\frac{n}{2}\right\rfloor + 1\right)\\
+    =&amp;amp;\quad\left(M+t\right)\left(\left\lfloor\frac{m}{2}\right\rfloor + 1\right) - m\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right)\\
+    \geq&amp;amp;\quad\left(M+1\right)\left(\left\lfloor\frac{m}{2}\right\rfloor + 1\right) - m\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right)\\
+    =&amp;amp;\quad\left(m+\left\lfloor\frac{m\cdot\left\lfloor\frac{n - 1}{2}\right\rfloor}{\left\lfloor\frac{m}{2}\right\rfloor + 1}\right\rfloor+1\right)\left(\left\lfloor\frac{m}{2}\right\rfloor + 1\right) - m\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right)\\
+    &amp;gt;&amp;amp;\quad\left(m+\left\lfloor\frac{m\cdot\left\lfloor\frac{n - 1}{2}\right\rfloor}{\left\lfloor\frac{m}{2}\right\rfloor + 1}\right\rfloor\right)\left(\left\lfloor\frac{m}{2}\right\rfloor + 1\right) - m\cdot\left(\left\lfloor\frac{m}{2}\right\rfloor - \left\lfloor\frac{n}{2}\right\rfloor\right)\\
+    =&amp;amp;\quad m\cdot\left(\left\lfloor\frac{n - 1}{2}\right\rfloor + \left\lfloor\frac{n}{2}\right\rfloor + 1\right)\\
+    =&amp;amp;\quad mn,
+\end{align*}\]&lt;/p&gt;&lt;p&gt;where the equality \(\left\lfloor\frac{n - 1}{2}\right\rfloor + \left\lfloor\frac{n}{2}\right\rfloor +
+1 = n\) can easily be derived by trivial casework on the parity of \(n\). This is a
+contradiction, as the sum of the minimum numbers of red and blue squares exceeds
+the total number of squares in the grid. Hence, \[r + b \leq M.\]&lt;/p&gt;&lt;p&gt;Lastly, we show that a coloring of the board exists such that \(r + b = M\). We
+color the board in steps. First, color \(\left\lfloor\frac{n}{2}\right\rfloor + 1\) of the
+rows in the grid blue and the remainder red. Then, note there are \(mn -
+m\cdot\left(\left\lfloor\frac{n}{2}\right\rfloor + 1\right) = m\cdot\left\lfloor\frac{n - 1}{2}
+\right\rfloor\) remaining red squares, some of which can be swapped with blue squares
+in other rows such that each pair being swapped remains within the same column.
+In particular, dividing the total number of red squares by the number of squares
+required to meet the quota of a red-dominated row, we see that we can have
+exactly \(\left\lfloor\frac{m\cdot\left\lfloor\frac{n - 1}{2}\right\rfloor}{\left\lfloor\frac{m}{2}
+\right\rfloor + 1}\right\rfloor\) red-dominated rows. Since swapping remains within columns,
+the number of blue-dominated columns remains invariant. It is now easy to see that
+a coloring in fact exists.&lt;/p&gt;&lt;p&gt;In conclusion, for an \(m\)-width, \(n\)-height board with \(m\geq n\), it is clear that
+\[ M = m + \left\lfloor\frac{m\cdot\left\lfloor\frac{n - 1}{2}\right\rfloor}{\left\lfloor\frac{m}{2}\right\rfloor + 1}\right\rfloor.\]
+And specifically for odd \(m\), \(n\), 
+\[ M = m + \left\lfloor\frac{m\cdot\left(n - 1\right)}{m + 1}\right\rfloor,\]
+or simply \(M=m+n-2\) for \(m\geq n&amp;gt; 1\).
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;</summary></entry></feed>

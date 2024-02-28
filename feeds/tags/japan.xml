@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/tags/japan.xml</id><subtitle>Tag: japan</subtitle><updated>2024-02-27T23:49:59Z</updated><link href="nodalynn.com/feeds/tags/japan.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Japan 2009/4</title><id>https://nodalynn.com/japan-20094.html</id><author><name></name></author><updated>2024-02-22T00:32:00Z</updated><link href="https://nodalynn.com/japan-20094.html" rel="alternate" /><summary type="html">&lt;h2&gt;Shooting Lemma on an Angle Equality&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(\Gamma\) be the circumcircle of triangle \(ABC\). A circle with center \(O\) is
+tangent to side \(BC\) at point \(P\) and tangent to the arc \(BC\) of \(\Gamma\) not
+containing \(A\) at point \(Q\). Prove that if \(\angle{BAO} = \angle{CAO}\), then
+\(\angle{PAO} = \angle{QAO}\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(M\) be the midpoint of arc \(BC\) containing \(A\), \(N \neq A\) be the
+intersection of line \(AO\) with \(\Gamma\), \(O_{\Gamma}\) be the center of \(\Gamma\),
+and \(\omega\) be the circle with center \(O\) described in the problem statement.&lt;/p&gt;&lt;p&gt;\(M\), \(P\), and \(Q\) are then collinear by the so called \(\textit{shooting lemma}\),
+which we prove as follows. It is clear that there exists a homothety mapping
+\(\omega\) to \(\Gamma\), since \(O_\Gamma\), \(O\), and \(Q\) are collinear, \(MO_{\Gamma}
+\) is parallel to \(PO\) (both perpendicular to \(\overline{BC})\), and both
+\(\triangle{MO_{\Gamma}Q}\) and \(\triangle{POQ}\) are isosceles. Consequently, \(M\),
+\(P\), and \(Q\) are collinear.&lt;/p&gt;&lt;p&gt;We now claim that \(M\), \(O_{\Gamma}\), \(N\) are also collinear. We have \[
+\measuredangle CBN = \measuredangle CAN = \measuredangle CAO = \measuredangle
+OAB = \measuredangle NAB = \measuredangle NCB, \] so \(N\) must be the midpoint of
+arc \(\widehat{BC}\) not containing \(A\). Thus, \(MN\) is simply the diameter of
+\(\Gamma\).&lt;/p&gt;&lt;p&gt;We now use the above to show that \(A\), \(P\), \(O\), \(Q\) are concyclic. Using the
+homothety defined above, we see that \[ \measuredangle OPQ = \measuredangle
+O_{\Gamma}MQ = \measuredangle NMQ = \measuredangle NAQ = \measuredangle OAQ, \]
+so \(A\), \(P\), \(O\), \(Q\) are concyclic.&lt;/p&gt;&lt;p&gt;Lastly, since \(\triangle{OPQ}\) is isosceles, \[ \measuredangle QAO =
+\measuredangle QPO = \measuredangle OQP = \measuredangle OAP.  \]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Once the configuration for the shooting lemma is found, the key observation is
+that \(A\), \(P\), \(O\), and \(Q\) are concyclic. This requires discovering point \(N\)
+along the way, which is both the antipode of \(M\) and the intersection of \(AO\)
+with \(\Gamma\).
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Japan 2010/2</title><id>https://nodalynn.com/japan-20102.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/japan-20102.html" rel="alternate" /><summary type="html">&lt;h2&gt;Powers of 2 Divide \(n^n - m\)&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(k\) and \(m\) be positive integers such that \(m\) is odd. Prove that there
+exists some positive integer \(n\) such that \(n^n - m\) is divisible by \(2^k\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;We prove the claim by induction on \(k\). For the base case when \(k=1\), any odd
+\(n\) will suffice. Now suppose that for some \(k\), there exists \(n=N\) such that
+\(2^k\mid n^n-m = N^N-m\) for each odd \(m\). Note that \(N\) must be odd. We then
+show that there exists some \(n\) such that \(2^{k+1}\mid n^n-m\) for each odd \(m\).&lt;/p&gt;&lt;p&gt;If \(2^{k+1}\mid N^N-m\), we are done by letting \(n=N\). On the other hand,
+suppose \(2^{k+1}\nmid N^N-m\). By assumption, \(2^k\mid N^N-m\) so let
+\(N^N-m=2^k\cdot t\) for odd positive integer \(t\).&lt;/p&gt;&lt;p&gt;We claim that \(2^{k+1}\) divides \[\left(2^k + N\right)^{\left(2^k + N\right)} - m.\]&lt;/p&gt;&lt;p&gt;Indeed since both \(N\) and \(t\) are odd,&lt;/p&gt;&lt;p&gt;\[\begin{align*}
+    \left(2^k + N\right)^{\left(2^k + N\right)} - m &amp;amp;\equiv \left(2^k + N\right)^N - m\pmod{2^{k+1}}\\
+    &amp;amp;\equiv N^N + \tbinom{N}{1}N^{N-1}\cdot 2^k - m \pmod{2^{k+1}}\\
+    &amp;amp;= 2^k\left(t + N^N\right) \\
+    &amp;amp;\equiv 0 \pmod{2^{k+1}},
+\end{align*}\]&lt;/p&gt;&lt;p&gt;as desired.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The motivation for the solution is to analyze the quantity \(n^n\) modulo \(2^k\)
+for each positive integer \(k\) and odd \(n\). &lt;/p&gt;&lt;p&gt;For \(k=1\), odd \(n^n\) yields \(1\), \(3\) \(\pmod{4}\).&lt;/p&gt;&lt;p&gt;For \(k=2\), odd \(n^n\) yields \(1\), \(3\), \(5\), \(7\) \(\pmod{8}\).&lt;/p&gt;&lt;p&gt;For \(k=3\), odd \(n^n\) yields \(1\), \(11\), \(5\), \(7\), \(9\), \(3\), \(13\), \(15\) \(\pmod{16}\).&lt;/p&gt;&lt;p&gt;For \(k=4\), odd \(n^n\) yields \(1\), \(27\), \(21\), \(23\), \(9\), \(19\), \(29\), \(15\), \(17\), \(11\), \(5\), \(7\), \(25\), \(3\), \(13\), \(31\) \(\pmod{32}\).&lt;/p&gt;&lt;p&gt;To reach the solution above, it suffices to notice that for each term in the
+\(k=k_0\) sequence, we either add \(2^{k_0}\) or leave it be to reach the
+\(k=k_0+1\) sequence (looping through the \(k=k_0\) sequence once).&lt;/p&gt;&lt;p&gt;Interestingly, the problem statement is also equivalent to saying that these
+quantities are unique modulo \(2^k\) (ie. there does not exist \(n_0\) and \(n_1\)
+such that \(n_0^{n_0} \equiv n_1^{n_1}\).)&lt;/p&gt;&lt;p&gt;With that mindset, one of the difficulties was in avoiding a certain
+anti-pattern/red herring. For each \(k\) from \(1\) to \(4\), we mysteriously find
+that if \(n_0^{n_0} \equiv n_1 \pmod{2^k}\), then \(n_1^{n_1} \equiv n_0 \pmod{2^k}
+\).&lt;/p&gt;&lt;p&gt;When I was solving the problem, I ended up trying to prove this anti-pattern,
+which actually stops at \(k=5\). For example, \(5^5 \equiv 53 \pmod{64}\) but
+\(53^{53} \equiv 37 \not\equiv 5 \pmod{64}\).
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Japan 2010/1</title><id>https://nodalynn.com/japan-20101.html</id><author><name></name></author><updated>2024-02-19T01:32:00Z</updated><link href="https://nodalynn.com/japan-20101.html" rel="alternate" /><summary type="html">&lt;h2&gt;The Foot is the Circumcenter&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Given an acute-angled triangle \(ABC\) such that \(AB \neq AC\), let \(H\) be the
+foot of the altitude from \(A\) to \(BC\). The points \(P\) and \(Q\) are defined in
+such a way that if the three points \(A\), \(B\), \(P\) and the three points \(A\), \(C\),
+\(Q\) are collinear in this order respectively, then the four points \(B\), \(C\),
+\(P\), \(Q\) are concyclic and \(HP = HQ\). Prove that \(H\) is the circumcenter of
+triangle \(APQ\).
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(O\) be the circumcenter of \((APQ)\) and \(H'\) be the foot of the altitude
+from \(A\) to side \(PQ\). We show that \(H = O\).&lt;/p&gt;&lt;p&gt;First, observe that \(\triangle{APQ}\) is similar to \(\triangle{ACB}\) since
+\(\measuredangle PAQ = - \measuredangle CAB\) and \(\measuredangle APQ =
+\measuredangle BPQ = \measuredangle BCQ = -\measuredangle ACB\). Consequently,
+\(\measuredangle PAH' = \measuredangle CAH\), so \(AH'\) is the isogonal of \(AH\)
+(and vice versa) with respect to \(\triangle{APQ}\).&lt;/p&gt;&lt;p&gt;Next, we show that \(O\) lies on \(AH\). Since the orthocenter of \(\triangle{APQ}\)
+lies on \(AH'\), and \(AH\) is the isogonal of \(AH'\), the result follows. In other
+words, \[ \measuredangle QAO = 90^\circ - \measuredangle APQ = \measuredangle
+PAH' = \measuredangle CAH.\]&lt;/p&gt;&lt;p&gt;Finally, it is well known that \(O\) lies on the perpendicular bisectors of
+\(\triangle{APQ}\). In particular, consider the perpendicular bisector of side
+\(PQ\), say \(\ell\). \(O\) must be the intersection of \(AH\) and \(\ell\). Since \(HP =
+HQ\), \(H\) is preceisely that intersection. Hence, \(O = AH\cap\ell = H\) as
+desired.
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;The notorious fact that the orthocenter and the circumcenter are isogonal
+conjugates appears. This problem is a prototypical example of its application.
+&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>Japan 2010/4</title><id>https://nodalynn.com/japan-20104.html</id><author><name></name></author><updated>2024-02-14T01:32:00Z</updated><link href="https://nodalynn.com/japan-20104.html" rel="alternate" /><summary type="html">&lt;h2&gt;A Cyclic Fractional Inequality&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Let \(x\), \(y\), \(z\) be positive real numbers. Prove that \[ \frac {1 + yz + zx}{(1
++ x + y)^2} + \frac {1 + zx + xy}{(1 + y + z)^2} + \frac {1 + xy + yz}{(1 + z +
+x)^2}\geq 1.\]
+&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Solution&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;Each term on the left-hand side of the inequality is cyclic, so WLOG 
+we show that \[\frac{1+zx+xy}{(1+y+z)^2} \geq \frac{x}{x+y+z}.\] We have
+\[\begin{align*}
+    &amp;amp;\quad (x-1)^2 \geq 0 \\
+    \iff&amp;amp;\quad (x^2 + 1)(y + z) \geq 2x(y + z) \\
+    \iff&amp;amp;\quad (1+zx+xy)(x+y+z) \geq x(1+y+z)^2 \\
+    \iff&amp;amp;\quad \frac{1+zx+xy}{(1+y+z)^2} \geq \frac{x}{x+y+z},
+\end{align*}\] 
+so \[\sum_{cyc}\frac{1+zx+xy}{(1+y+z)^2} \geq \sum_{cyc}\frac{x}{x+y+z} =
+1.\]
+&lt;/p&gt;&lt;p style=&quot;text-align: right&quot;&gt;\(\blacksquare\)&lt;/p&gt;&lt;/div&gt;&lt;hr /&gt;&lt;h2&gt;Motivation&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;This inequality is homogenized, but manipulating it seems like a huge ordeal.
+For example, if we think of adding the terms, we end up with some ugly 6th
+degree polynomial on the numerator of the left-hand side. So this suggests to us
+that dealing with each term individually is the way to go. One thing we can try
+is bounding each individual term against some value. If the sum of these bounds
+evaluates to some value greater than or equal to 1, we would be done. &lt;/p&gt;&lt;p&gt;Now to think up such value, we can think about what we don't want. We probably
+don't want constants because it's likely that we would be able to adjust \(x\),
+\(y\), \(z\) in such a way that allows that inequality to break. This means that
+we'll have to have some combination of \(x\), \(y\), \(z\) in the bound. Another fact
+that may help is that the terms in the left-hand side of the inequality are
+cyclic, suggesting that the bounds are probably going to be cyclic.&lt;/p&gt;&lt;p&gt;Going through this train of thought, we may eventually find the following bounds:&lt;/p&gt;&lt;p&gt;\[\begin{align*}
+\frac{1+xy+xz}{(1+y+z)^2} \geq \frac{x^k}{x^k + y^k + z^k}, \\
+\frac{1+yz+yx}{(1+z+x)^2} \geq \frac{y^k}{x^k + y^k + z^k}, \\
+\frac{1+zx+zy}{(1+x+y)^2} \geq \frac{z^k}{x^k + y^k + z^k},
+\end{align*}\]&lt;/p&gt;&lt;p&gt;where \(k\) is any real value. Now to determine \(k\), WLOG, note that \[(1+xy+xz)
+(x^k + y^k + z^k) \geq x^k(1+y+z)^2\] must be true. This looks like weighted
+AM-GM, so consider the following fact.&lt;/p&gt;&lt;p&gt;Whenever we have \[a_{1}^{w_1}a_{2}^{w_2}\cdots a_{n}^{w_n} \leq w_1a_1 + w_2a_2
++ \cdots + w_na_n,\] the product of the exponent and the coefficient on each
+variable equate on either sides. &lt;/p&gt;&lt;p&gt;Therefore, we want the exact same thing to happen in our current situation.
+Expanding and simplifying our inequality, we get &lt;/p&gt;&lt;p&gt;\[\begin{align*}
+    &amp;amp;x^{k+1}y + x^{k+1}z + y^k+xy^{k+1} + xy^kz + z^k + xyz^k + xz^{k+1} \\
+    \geq\ &amp;amp;x^ky^2 + z^2x^k + 2x^kzy + 2x^kz+ 2x^ky.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;So using the trick on \(x\), we want 
+\[\begin{align*}
+    &amp;amp;(k+1)\cdot 1 + (k+1)\cdot 1 + 1\cdot 1 +1\cdot 1 + 1\cdot 1 + 1\cdot 1 \\
+    =\ &amp;amp;k\cdot 1 + k\cdot 1 + k\cdot 2 + k\cdot 2 + k\cdot 2.
+\end{align*}\]&lt;/p&gt;&lt;p&gt;Solving for \(k\), we get \(k=1\). &lt;/p&gt;&lt;p&gt;Letting \(k=1\) in our inequality and simplifying, we get \[x^2y + x^2z + y + z
+\geq 2xz + 2xy.\] &lt;/p&gt;&lt;p&gt;This is equivalent to \((x^2 + 1)(y + z) \geq 2x(y + z)\), which is the same as
+\(x^2 + 1 \geq 2x,\) or \((x-1)^2 \geq 0\). To summarize, we have shown that &lt;/p&gt;&lt;p&gt;\[\begin{align*} 
+	\frac{1+xy+xz}{(1+y+z)^2} \geq \frac{x}{x + y +z}, \\ 
+	\frac{1+yz+yx}{(1+z+x)^2} \geq \frac{y}{x + y + z}, \\ 
+	\frac{1+zx+zy}{(1+x+y)^2} \geq \frac{z}{x + y + z}, 
+\end{align*}\] &lt;/p&gt;&lt;p&gt;so adding gives us the result. Also, note that although we have used AM-GM as a
+motivator for finding the value of \(k\), it will not actually appear in a formal
+write-up of the solution.
+&lt;/p&gt;&lt;/div&gt;</summary></entry></feed>
