@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/feed.xml</id><subtitle>Recent Posts</subtitle><updated>2024-03-24T04:42:18Z</updated><link href="nodalynn.com/feeds/feed.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Olympiad Solutions are Up!</title><id>https://nodalynn.com/olympiad-solutions-are-up.html</id><author><name></name></author><updated>2024-02-27T11:50:00Z</updated><link href="https://nodalynn.com/olympiad-solutions-are-up.html" rel="alternate" /><summary type="html">&lt;h2&gt;Math Updates&lt;/h2&gt;&lt;h3&gt;New Content&lt;/h3&gt;&lt;p&gt;After some months of working on new problems and doing write-ups (both on paper
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Lynn Noda</title><id>https://nodalynn.com/feeds/feed.xml</id><subtitle>Recent Posts</subtitle><updated>2024-04-08T02:15:09Z</updated><link href="nodalynn.com/feeds/feed.xml" rel="self" /><link href="nodalynn.com" /><entry><title>Olympiad Solutions are Up!</title><id>https://nodalynn.com/olympiad-solutions-are-up.html</id><author><name></name></author><updated>2024-02-27T11:50:00Z</updated><link href="https://nodalynn.com/olympiad-solutions-are-up.html" rel="alternate" /><summary type="html">&lt;h2&gt;Math Updates&lt;/h2&gt;&lt;h3&gt;New Content&lt;/h3&gt;&lt;p&gt;After some months of working on new problems and doing write-ups (both on paper
 and digitally), I present you the &lt;a href=&quot;/math/oly&quot;&gt;Olympiad corner&lt;/a&gt;!&lt;/p&gt;&lt;p&gt;Before you dive in, be sure to read through &lt;a href=&quot;/math#olympiad&quot;&gt;this section&lt;/a&gt; on
 my math page.&lt;/p&gt;&lt;p&gt;The initial batch of problems range across the four areas (A, C, N, G) pretty
 evenly, with some problems coming from multiple areas. There are twenty-five
@@ -10,26 +10,26 @@ without them for now... sorry :(&lt;/p&gt;&lt;h3&gt;Math Tech... more like Math 
 is pretty much the same as LaTeX and it &lt;em&gt;just works&lt;/em&gt;. The nice thing about
 KaTeX is that it adheres to the single responsibility principle: it only
 renders math. The mess of formatting then becomes the responsibility of the
-client.  Although this sounds like a nuisance, on the flip side, it means that
-the client gets full control over the page layout. You may miss theorem
-numbering and proof environments, but that comes with it the hidden assumption
-that the document is static. The dynamic web, however, has a whole host of
-tools that allows you to present math in unconventional ways. KaTeX simply
-gets out of the way and allows you to do just that.&lt;/p&gt;&lt;p&gt;For Olympiad solutions, my write-ups are stored and organized using a tool
+client. This sounds burdensome, but this also means that the client gets full
+control over the page layout. You may miss theorem numbering and proof
+environments, but that comes with it the hidden assumption that the document is
+static. The dynamic web, on the other hand, has a whole host of tools that
+allows you to present math in unconventional ways. KaTeX gives you that freedom
+by getting out of your way.&lt;/p&gt;&lt;p&gt;For Olympiad solutions, my write-ups are stored and organized using a tool
 called &lt;a href=&quot;https://github.com/vEnhance/von&quot;&gt;VON&lt;/a&gt;. It maintains modular chunks of
 math that I can freely cut and paste wherever I want. This gives me a single
 source of truth for any math I write digitally. Want to add a problem to an
 article or book? Go to the source and add &lt;code&gt;\voninclude{PROBLEM_SOURCE}&lt;/code&gt;. Want
 to retrieve a problem statement for an app or site?  Run a subprocess with&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;von show &amp;quot;PROBLEM_SOURCE&amp;quot; -b 0&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, all I need to do is update VON, and the changes become reflected
 everywhere!&lt;/p&gt;&lt;p&gt;For my build process, I have a simple shell script that pulls Olympiad data
-from VON, converts LaTeX to KaTeX readable&lt;label for=&quot;sn-461569-712511&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-461569-712511&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;The syntax that KaTeX expects is a bit different from traditional TeX/LaTeX (no dollar signs, environments wrapped in display mode), but good ol' PCRE's got my back.&lt;/span&gt; form,
+from VON, converts LaTeX to KaTeX readable&lt;label for=&quot;sn-427745-558583&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-427745-558583&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;The syntax that KaTeX expects is a bit different from traditional TeX/LaTeX (no dollar signs, environments wrapped in display mode), but good ol' PCRE's got my back.&lt;/span&gt; form,
 and writes the output to temporary files. This is then read by my static site
 generator to be integrated with anything added through markdown (including
 custom extensions).&lt;/p&gt;&lt;hr /&gt;&lt;h2&gt;Nice-To-Haves and Things-To-Fix&lt;/h2&gt;&lt;p&gt;Aside from the major update, before I forget, I'll mention a few minor things I
 want add or fix for the site. This may or may not happen any time soon...&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Add a custom 404 page&lt;/li&gt;&lt;li&gt;Fix the URL slugs for the generated Atom feeds&lt;/li&gt;&lt;li&gt;Make the ID/URL generation for image galleries consistent across builds&lt;/li&gt;&lt;li&gt;Add syntax highlighting for code blocks?&lt;/li&gt;&lt;/ol&gt;&lt;hr /&gt;&lt;h2&gt;Nano Life Updates/Plans&lt;/h2&gt;&lt;p&gt;A few months ago, I decided to order a programmable mechanical keyboard, and
 now that I have it, I feel a lot faster compared to when I was only using my
 laptop keyboard. This is especially true after having done twenty-five
-write-ups.  &lt;label for=&quot;sn-427745-558583&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-427745-558583&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Although this may just be placebo...&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Besides that, for the next few months, I'll probably get back into software. I
+write-ups.  &lt;label for=&quot;sn-914751-453890&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;sn-914751-453890&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;Although this may just be placebo...&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Besides that, for the next few months, I'll probably get back into software. I
 have things I want to hack for Zedigo(改). If things go well, maybe an MVP will
 be on the horizon?&lt;/p&gt;</summary></entry><entry><title>Folklore Combinatorics/4</title><id>https://nodalynn.com/folklore-combinatorics4.html</id><author><name></name></author><updated>2024-02-25T04:32:00Z</updated><link href="https://nodalynn.com/folklore-combinatorics4.html" rel="alternate" /><summary type="html">&lt;h2&gt;Maximally Parasocial&lt;/h2&gt;&lt;div class=&quot;oly&quot;&gt;&lt;p&gt;At a social gathering of introverts, it was found that for each pair of people,
 exactly one of them knew the other. Prove that there was someone in the
